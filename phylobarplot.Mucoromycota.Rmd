@@ -1,0 +1,725 @@
+---
+title: "Mojave_Div_ITS_phyloseq"
+author: "Nat Pombubpa"
+date: "Updated on December 11, 2019"
+output: html_document
+---
+
+#Fungal taxonomic barplot by site
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+###STEP1: Load all necessary packages for analysis
+More information about Phyloseq can be found at the following link: [Phyloseq](https://joey711.github.io/phyloseq/)
+If you get error in this step, you probably need to install any packages which causes error.
+
+```{r warning=FALSE, message=FALSE}
+library(ape)
+library(vegan)
+library(dplyr)
+library(scales)
+library(grid)
+library(reshape2)
+library(phyloseq)
+library(magrittr)
+library(ggplot2)
+library(ggpubr)
+library(plyr)
+library(data.table)
+library(tidyr)
+library(tidyverse)
+library(multcompView)
+library(ggtree)
+library(treeio)
+library(devtools)
+library(MicEco)
+library(MoMAColors)
+library(castor)
+
+
+```
+
+###STEP2: Import Mapping file (metadate file)
+1.Check mapping file before import to R, R doesn’t seem to like sample name to start with number or contain “-” in sample name. If you get error in this step, you should check file name first.
+
+2.First column of first row should not start with #, R will not read the first row that starts with #
+
+3. You can choose which samples to include in analysis by indicating "KEEP" in Description column
+
+```{r}
+meta = read.table("Metadata_KHK2.tsv",header=TRUE,row.names=1,sep="\t",stringsAsFactors=FALSE)
+```
+
+If need to keep or remove some samples
+```{r}
+#meta <- meta[which(meta$Layer %in% c("Surface")),]
+```
+
+###STEP3: Check if your metadata file has been import successfully and correctly
+
+The output will show a table of your metadata file (mapping file).
+
+*If you do not have header, you might start your first row with #
+
+```{r warning=FALSE}
+head(meta)
+```
+
+###STEP4: Construct sample_data-class using imported metadata
+
+```{r}
+sampleData <- sample_data(meta)
+```
+
+###STEP5: Import OTU table
+
+OTU table from Mojave 16S data is “MC2017FC.otu_table.txt”.
+MC-Mojave Crust-2017-FC-Fungi completed
+
+```{r}
+otus <- read.table("Mojave2020_KKelly202307.otu_table.txt",header=T,sep="\t",row.names=1)
+otumat <- as(as.matrix(otus), "matrix")
+OTU = otu_table(otumat, taxa_are_rows = TRUE)
+```
+
+Check imported OTU table
+
+```{r warning=FALSE}
+head(OTU)
+```
+
+###STEP6: Import taxonomy table
+Taxonmy table generated from AMPtk need to be rearranged using following script.
+
+“perl rdp_taxonmy2mat.pl<Input_taxonmy.txt>Output_taxonomy.txt”
+
+rdp_taxonomy2mat.pl was created by Professor Jason E. Stajich
+
+```{r}
+taxmat <- read.table("Mojave2020_KKelly202307.ASVs.taxonomy.fix.txt", header=T,sep="\t",row.names=1)
+taxmat <- as(as.matrix(taxmat),"matrix")
+TAX = tax_table(taxmat)
+```
+
+###STEP7: Import phylogenetic tree
+Phylogenetic tree can also be include for further phylogenetic analysis.
+
+```{r warning=FALSE}
+treefile = "Mojave2020_KKelly202307.ASVs.tree.phy"
+tree = read.tree(treefile)
+```
+
+###STEP8: Construct Phyloseq object
+To construct phyloseq object, otu table, taxonomy table, and sampleData are required. Phylogenetic tree can be included, but it is not necessary for constructing phyloseq object.
+Construct Phyloseq object called "Physeq"
+
+```{r warning=FALSE}
+physeq = phyloseq(OTU,TAX,sampleData,tree)
+```
+
+Check phyloseq object
+This should indicate that your physeq is a "phyloseq-class experiment-level object""
+
+```{r warning=FALSE}
+physeq
+```
+
+###STEP9: Remove singletons
+Remove any OTUs that present only one time.
+
+```{r }
+physeq.prune = prune_taxa(taxa_sums(physeq) > 1, physeq)
+```
+
+```{r warning=FALSE}
+physeq.prune
+```
+
+###STEP10: Plot read counts to check dataset
+Check read counts: any samples that have very low reads should be removed.
+[Ref](http://evomics.org/wp-content/uploads/2016/01/phyloseq-Lab-01-Answers.html)
+
+```{r}
+readcount = data.table(as(sample_data(physeq.prune), "data.frame"),
+                 TotalReads = sample_sums(physeq.prune), 
+                 keep.rownames = TRUE)
+setnames(readcount, "rn", "SampleID")
+
+#For plotting, use command below.
+#SeqDepth = ggplot(readcount, aes(TotalReads)) + geom_histogram() + ggtitle("Sequencing Depth")
+```
+
+TotalReads of all the samples can be in this table (select only SampleID and TotalReads columns).
+In order to check samples with low number of reads, "order()" can be used to sort "TotalReads" column.
+In this dataset, N55.Rhizo has very low number of reads, so will will filter this sample out using the next minimum number of reads.
+```{r}
+readcount = readcount[order(readcount$TotalReads), c("SampleID", "TotalReads")]
+```
+
+```{r}
+head(readcount)
+```
+
+```{r warning=FALSE}
+set.seed(1)
+physeq.prune.rarefy = rarefy_even_depth(physeq.prune, sample.size = 7909, replace = FALSE, trimOTUs = FALSE)
+physeq.prune.rarefy
+```
+
+###STEP11: Amphinema trees
+
+```{r}
+# Subset taxa for Glomus and Rhizoglomus
+#physeq.prune.rarefy.Amphinemas <- subset_taxa(physeq.prune.rarefy, Genus %in% c("Glomus", "Rhizophagus"))
+physeq.prune.rarefy.Amphinemas <- subset_taxa(physeq.prune.rarefy, Genus == "Amphinema")
+physeq.prune.rarefy.Amphinemas
+
+```
+
+
+```{r}
+
+#tax_table(physeq.prune.rarefy.Amphinemas)
+
+```
+
+```{r}
+
+phy_tree(physeq.prune.rarefy.Amphinemas)
+
+# Plot the modified tree
+p2 <- ggtree(phy_tree(physeq.prune.rarefy.Amphinemas), layout="rectangular") +
+  geom_tiplab(size=2, color="black")
+
+
+
+
+
+#p2
+
+```
+
+
+```{r}
+Dali <- moma.colors("Dali")
+
+# Generate a larger palette of colors
+#dali_palette <- moma.colors("Dali", n = 200)
+
+# Subset the palette to include 100 colors
+#palette_100 <- dali_palette[1:100]
+
+# Display the first few colors in the palette
+#head(palette_100)
+```
+
+
+
+```{r}
+
+tax_table_prune <- tax_table(physeq.prune.rarefy.Amphinemas)
+#tax_table_prune
+
+# Extract species names from the taxonomy table
+species_names <- tax_table_prune[, "Species"]
+genus_names <-  tax_table_prune[, "Genus"]
+
+species_names[is.na(species_names)] <- tax_table_prune[, "Genus"]
+
+# If Species column is not available, you can extract Genus instead
+#if (!"Species" %in% colnames(tax_table_prune)) {
+#  species_names <- tax_table_prune[, "Genus"]
+#}
+
+species_names[is.na(species_names)] <- "Unknown Amphinema"
+
+#species_names
+
+
+```
+
+```{r}
+
+# Get the tip labels (ASV IDs) from the phylogenetic tree
+tip_labels <- phy_tree(physeq.prune.rarefy.Amphinemas)$tip.label
+
+# Match ASV IDs with species names and replace tip labels
+new_tip_labels <- species_names[match(tip_labels, rownames(species_names))]
+
+#new_tip_labels
+```
+
+
+```{r}
+
+object <- phy_tree(physeq.prune.rarefy.Amphinemas)
+
+tiplabels <- object$tip.label
+
+new_tip_labels <- paste(tiplabels, new_tip_labels, sep = " ")
+
+object$tip.label <- new_tip_labels
+
+object
+```
+
+```{r}
+
+# Plot the modified tree with species names as tip labels
+p3 <- ggtree(object, layout="rectangular")#+
+#  geom_tiplab(size=2, color="black")
+
+
+```
+
+```{r}
+
+# Define the number of colors you want in the palette
+num_colors <- 100
+
+# Generate the palette from white to red
+palette_white_to_red <- colorRampPalette(c("aquamarine4", "yellow1", "darkorange"))(num_colors)
+
+# Display the first few colors in the palette
+head(palette_white_to_red)
+```
+
+###STEP12: Plot tree with heatmap
+
+```{r}
+# Get the OTU table
+otu_table <- otu_table(physeq.prune.rarefy.Amphinemas)
+
+species_names[is.na(species_names)] <- "Unknown Amphinema"
+
+# Replace row names in the OTU table with species names
+rownames(otu_table) <- new_tip_labels
+
+# Get the sample data from the phyloseq object
+sample_data <- as.data.frame(sample_data(physeq.prune.rarefy.Amphinemas))
+
+# Extract the variables you want to use as column names (e.g., soil type, site)
+column_names <- paste(sample_data$Crust_type, sample_data$Site, sep = " ")
+
+
+
+log_otu_table <- log10(otu_table + 1)  # Adding 1 to avoid log(0)
+
+# Replace column names in the OTU table
+colnames(log_otu_table) <- column_names
+
+colnames(log_otu_table) <- make.unique(colnames(log_otu_table))
+
+
+p_heatmap <- gheatmap(p3, log_otu_table, width=4, offset=0.25, 
+                      legend_title="Relative Abundance", colnames_position="bottom", 
+                      colnames_angle=45, colnames_offset_y=0, hjust=1, font.size=1.25) +
+  scale_fill_gradientn("Relative abundance", colours = palette_white_to_red) +
+  scale_y_continuous(limits=c(-2, 25)) + theme_tree(legend.position="right")
+plot(p_heatmap)
+```
+
+```{r}
+
+# Save the heatmap as a file
+ggsave("Amphinema.png", plot = p_heatmap, width = 8, height = 6)
+
+```
+
+
+###STEP12: Plot tree with faceted bar plots
+
+
+```{r}
+# Get the OTU table
+otu_table <- otu_table(physeq.prune.rarefy.Amphinemas)
+
+# Replace row names in the OTU table with species names
+rownames(otu_table) <- new_tip_labels
+
+# Get the sample data from the phyloseq object
+sample_data <- as.data.frame(sample_data(physeq.prune.rarefy.Amphinemas))
+
+# Extract the variables you want to use as column names (e.g., soil type, site)
+column_names <- paste(sample_data$Crust_type, sample_data$Site, sep = " ")
+
+log_otu_table <- log10(otu_table + 1)  # Adding 1 to avoid log(0)
+
+# Replace column names in the OTU table
+colnames(log_otu_table) <- column_names
+
+colnames(log_otu_table) <- make.unique(colnames(log_otu_table))
+
+
+p_heatmap <- gheatmap(p3, log_otu_table, width=4, offset=0.25, 
+                      legend_title="Relative Abundance", colnames_position="bottom", 
+                      colnames_angle=45, colnames_offset_y=0, hjust=1, font.size=1.25) +
+  scale_fill_gradientn("Relative abundance", colours = palette_white_to_red) +
+  scale_y_continuous(limits=c(-2, 25)) + theme_tree(legend.position="right")
+plot(p_heatmap)
+```
+
+
+
+```{r}
+physeq.prune.rarefy.AmphinemasAB <- subset_samples(physeq.prune.rarefy.Amphinemas, Site == "AB")
+
+physeq.prune.rarefy.AmphinemasODLO <- subset_samples(physeq.prune.rarefy.Amphinemas, Site == "ODLO")
+
+physeq.prune.rarefy.AmphinemasTP <- subset_samples(physeq.prune.rarefy.Amphinemas, Site == "TP")
+
+physeq.prune.rarefy.AmphinemasCIMA <- subset_samples(physeq.prune.rarefy.Amphinemas, Site == "CIMA")
+
+physeq.prune.rarefy.AmphinemasGMT <- subset_samples(physeq.prune.rarefy.Amphinemas, Site == "GMT")
+
+#sample_data <- as.data.frame(sample_data(physeq.prune.rarefy.Amphinemas))
+
+AB = taxa_sums(physeq.prune.rarefy.AmphinemasAB)
+#sums.Amphinemas
+
+TP = taxa_sums(physeq.prune.rarefy.AmphinemasTP)
+#sums.Amphinemas
+
+GMT = taxa_sums(physeq.prune.rarefy.AmphinemasGMT)
+#sums.Amphinemas
+
+CIMA = taxa_sums(physeq.prune.rarefy.AmphinemasCIMA)
+#sums.Amphinemas
+
+ODLO = taxa_sums(physeq.prune.rarefy.AmphinemasODLO)
+#sums.Amphinemas
+
+
+
+AB <- data.frame(ID=new_tip_labels, AB)
+
+AB <- AB %>%
+  mutate(Site = "AB")
+
+colnames(AB)[colnames(AB) == "AB"] <- "Count"
+
+
+GMT <- data.frame(ID=new_tip_labels, GMT)
+
+GMT <- GMT %>%
+  mutate(Site = "GMT")
+
+colnames(GMT)[colnames(GMT) == "GMT"] <- "Count"
+
+
+TP <- data.frame(ID=new_tip_labels, TP)
+
+TP <- AB %>%
+  mutate(Site = "TP")
+
+colnames(GMT)[colnames(GMT) == "TP"] <- "Count"
+
+
+ODLO <- data.frame(ID=new_tip_labels, ODLO)
+
+ODLO <- AB %>%
+  mutate(Site = "ODLO")
+
+colnames(ODLO)[colnames(ODLO) == "ODLO"] <- "Count"
+
+
+CIMA <- data.frame(ID=new_tip_labels, CIMA)
+
+CIMA <- CIMA %>%
+  mutate(Site = "CIMA")
+
+colnames(CIMA)[colnames(CIMA) == "CIMA"] <- "Count"
+
+
+AB <- cbind(AB, new_tip_labels)
+
+
+GMT <- cbind(GMT, new_tip_labels)
+
+
+TP <- cbind(TP, new_tip_labels)
+
+
+CIMA <- cbind(CIMA, new_tip_labels)
+
+ODLO <- cbind(ODLO, new_tip_labels)
+
+
+```
+
+```{r}
+
+b <- rbind(AB, GMT, TP, CIMA, ODLO)
+
+# Define a small constant
+epsilon <- 1  # You can adjust this value based on your preference
+
+# Assuming your DataFrame is called df and the column is called Val
+b$Count <- log10(b$Count + epsilon)
+
+#b
+
+
+total_sum <- d %>%
+  filter(ID == "ASV980 Glomus macrocarpum") %>%
+  summarise(total_sum = sum(Val, na.rm = TRUE))
+
+print(total_sum$total_sum)
+
+
+```
+```{r}
+#p4 <- facet_plot(p3, panel='Stacked Barplot', data=b, geom=geom_barh, aes(x=Site), color="firebrick") + theme_tree2()
+#p4
+
+p4 <- facet_plot(p3, panel = 'Site', data = b, 
+				geom = geom_barh, 
+				mapping = aes(x = Count, fill = Site), 
+				stat='identity' ) 
+p4
+
+
+
+```
+
+
+
+```{r}
+
+# Save the heatmap as a file
+ggsave("Amphinema_plot.png", plot = p4, width = 8, height = 6)
+
+```
+
+
+```{r}
+physeq.prune.rarefy.AmphinemasSMC <- subset_samples(physeq.prune.rarefy.Amphinemas, Crust_type == "SMC")
+
+physeq.prune.rarefy.AmphinemasSMC.ster <- subset_samples(physeq.prune.rarefy.Amphinemas, Crust_type == "SMC.ster")
+
+physeq.prune.rarefy.AmphinemasDirt <- subset_samples(physeq.prune.rarefy.Amphinemas, Crust_type == "Dirt")
+
+physeq.prune.rarefy.AmphinemasSMC.sub <- subset_samples(physeq.prune.rarefy.Amphinemas, Crust_type == "SMC.sub")
+
+
+#sample_data <- as.data.frame(sample_data(physeq.prune.rarefy.Amphinemas))
+
+SMC = taxa_sums(physeq.prune.rarefy.AmphinemasSMC)
+#sums.Amphinemas
+
+Dirt = taxa_sums(physeq.prune.rarefy.AmphinemasDirt)
+#sums.Amphinemas
+
+SMC.ster = taxa_sums(physeq.prune.rarefy.AmphinemasSMC.ster)
+#sums.Amphinemas
+
+SMC.sub = taxa_sums(physeq.prune.rarefy.AmphinemasSMC.sub)
+#sums.Amphinemas
+```
+
+
+
+```{r}
+
+SMC <- data.frame(ID=new_tip_labels, SMC)
+
+SMC <- SMC %>%
+  mutate(Crust_type = "SMC")
+
+colnames(SMC)[colnames(SMC) == "SMC"] <- "Val"
+
+
+SMC.ster <- data.frame(ID=new_tip_labels, SMC.ster)
+
+SMC.ster <- SMC.ster %>%
+  mutate(Crust_type = "SMC.ster")
+
+colnames(SMC.ster)[colnames(SMC.ster) == "SMC.ster"] <- "Val"
+
+
+SMC.sub <- data.frame(ID=new_tip_labels, SMC.sub)
+
+SMC.sub <- SMC.sub %>%
+  mutate(Crust_type = "SMC.sub")
+
+colnames(SMC.sub)[colnames(SMC.sub) == "SMC.sub"] <- "Val"
+
+
+Dirt <- data.frame(ID=new_tip_labels, Dirt)
+
+Dirt <- Dirt %>%
+  mutate(Crust_type = "Dirt")
+
+colnames(Dirt)[colnames(Dirt) == "Dirt"] <- "Val"
+
+
+
+Dirt <- cbind(Dirt, new_tip_labels)
+
+
+SMC <- cbind(SMC, new_tip_labels)
+
+
+SMC.ster <- cbind(SMC.ster, new_tip_labels)
+
+
+SMC.sub <- cbind(SMC.sub, new_tip_labels)
+
+
+
+```
+
+
+
+```{r}
+
+d <- rbind(Dirt, SMC, SMC.ster, SMC.sub)
+
+# Define a small constant
+epsilon <- 1  # You can adjust this value based on your preference
+
+d$Val <- log10(d$Val + epsilon)
+
+d
+
+total_sum <- d %>%
+  filter(ID == "ASV980 Glomus macrocarpum") %>%
+  summarise(total_sum = sum(Val, na.rm = TRUE))
+
+print(total_sum$total_sum)
+
+```
+
+```{r}
+p5 <- facet_plot(p4, panel = 'Crust type', data = d, 
+				geom = geom_barh, 
+				mapping = aes(x = Val, fill = Crust_type), 
+				stat='identity' ) +
+  scale_fill_manual(values = Dali)
+p5
+```
+
+
+
+```{r}
+
+# Save the heatmap as a file
+ggsave("Amphinemabarplot.png", plot = p5, width = 8, height = 6)
+
+```
+
+
+```{r}
+p5 <- facet_plot(p4, panel = 'Crust type', data = d, 
+				geom = geom_barh, 
+				mapping = aes(x = Val, fill = Crust_type), 
+				stat='identity' ) +
+  scale_fill_manual(values = Dali)
+p5
+```
+
+```{r}
+
+library(castor)
+```
+
+```{r}
+p5 <- facet_plot(p4, panel = 'Crust type', data = Dirt, 
+				geom = geom_violinh, 
+				mapping = aes(x = Val, fill = Crust_type), 
+				stat='identity' ) +
+  scale_fill_manual(values = Dali) 
+#p5
+
+#facet_plot(p4, panel="Abundance", data=Dirt, 
+#           geom_joy, mapping = aes(x=Val,group=label, 
+#                                        fill=Crust_type), 
+#           color='grey80', lwd=.3)
+
+#p4 <- facet_plot(p3, panel='Stacked Barplot', data=b, geom=geom_barh, aes(x=Site), color="firebrick") + theme_tree2()
+#p4
+
+p10 <- facet_plot(p3, panel = 'Site', data = Dirt, 
+				geom = geom_barh, 
+				mapping = aes(x = Val, fill = Crust_type), 
+				stat='identity' ) 
+epsilon <- 100  # You can adjust this value based on your preference
+
+# Assuming your DataFrame is called df and the column is called Val
+Dirt$log_Val <- Dirt$Val + epsilon
+
+
+epsilon <- 1  # You can adjust this value based on your preference
+
+# Assuming your DataFrame is called df and the column is called Val
+Dirt$Val <- Dirt$Val + epsilon
+
+facet_plot(p3, panel="Abundance", data=Dirt, 
+           geom_joy, mapping = aes(x=Val,group=label, 
+                                        fill=Crust_type), 
+           color='grey80', lwd=.3)
+
+
+
+#p4 <- facet_plot(p3, panel='Stacked Barplot', data=b, geom=geom_barh, aes(x=Site), color="firebrick") + theme_tree2()
+#p4
+           
+```
+
+
+
+```{r}
+d
+           
+```
+
+```{r}
+SMC
+           
+```
+
+
+```{r}
+
+phy_tree(physeq.prune.rarefy.Amphinemas)
+
+# Plot the modified tree
+p100 <- ggtree(phy_tree(physeq.prune.rarefy.Amphinemas), layout="rectangular") +
+  geom_tiplab(size=2, color="black")
+
+labels <- p100$tip.label
+#labels
+d1 <- data.frame(id=p10$tip.label, location=sample(c(labels), 30, replace=TRUE))
+new_tip_labels
+#p1 <- p %<+% d1 + geom_tippoint(aes(color=location))
+```
+
+```{r}
+
+# Get the OTU table
+#otu_table <- otu_table(physeq.prune.rarefy.Amphinemas)
+
+#species_names[is.na(species_names)] <- "Unknown Amphinema"
+
+# Replace row names in the OTU table with species names
+#rownames(otu_table) <- new_tip_labels
+
+# Get the sample data from the phyloseq object
+#sample_data <- as.data.frame(sample_data(physeq.prune.rarefy.Amphinemas))
+
+# Extract the variables you want to use as column names (e.g., soil type, site)
+#column_names <- paste(d$Crust_type, d$d$Crust_type, sep = " ")
+
+
+
+log_otu_table <- log10(otu_table + 1)  # Adding 1 to avoid log(0)
+
+# Replace column names in the OTU table
+colnames(log_otu_table) <- column_names
+
+colnames(log_otu_table) <- make.unique(colnames(log_otu_table))
+
+#p2
+```

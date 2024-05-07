@@ -1,0 +1,335 @@
+Loading [1msamtools/1.19.2[22m
+  [94mLoading requirement[0m: libdeflate/1.17 htslib/1.19.1
+[W::fai_get_val] Reference blast_filter$V2 not found in FASTA file, returning empty sequence
+[W::fai_get_val] Reference blast_filter$V2 not found in FASTA file, returning empty sequence
+[faidx] Failed to fetch sequence in blast_filter$V2
+nthread = 0
+nthreadpair = 0
+nthreadtb = 0
+ppenalty_ex = 0
+stacksize: 8192 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+Gap Penalty = -1.53, +0.00, +0.00
+
+
+
+Making a distance matrix ..
+
+There are 1 ambiguous characters.
+    1 / 209  101 / 209  201 / 209
+done.
+
+Constructing a UPGMA tree (efffree=0) ... 
+    0 / 209   10 / 209   20 / 209   30 / 209   40 / 209   50 / 209   60 / 209   70 / 209   80 / 209   90 / 209  100 / 209  110 / 209  120 / 209  130 / 209  140 / 209  150 / 209  160 / 209  170 / 209  180 / 209  190 / 209  200 / 209
+done.
+
+Progressive alignment 1/2... 
+STEP     1 / 208  fSTEP     2 / 208  fSTEP     3 / 208  fSTEP     4 / 208  fSTEP     5 / 208  fSTEP     6 / 208  fSTEP     7 / 208  fSTEP     8 / 208  fSTEP     9 / 208  fSTEP    10 / 208  fSTEP    11 / 208  fSTEP    12 / 208  fSTEP    13 / 208  fSTEP    14 / 208  fSTEP    15 / 208  fSTEP    16 / 208  fSTEP    17 / 208  fSTEP    18 / 208  fSTEP    19 / 208  fSTEP    20 / 208  fSTEP    21 / 208  fSTEP    22 / 208  fSTEP    23 / 208  fSTEP    24 / 208  fSTEP    25 / 208  fSTEP    26 / 208  fSTEP    27 / 208  fSTEP    28 / 208  fSTEP    29 / 208  fSTEP    30 / 208  fSTEP    31 / 208  fSTEP    32 / 208  fSTEP    33 / 208  fSTEP    34 / 208  fSTEP    35 / 208  fSTEP    36 / 208  fSTEP    37 / 208  fSTEP    38 / 208  fSTEP    39 / 208  fSTEP    40 / 208  fSTEP    41 / 208  fSTEP    42 / 208  fSTEP    43 / 208  fSTEP    44 / 208  fSTEP    45 / 208  fSTEP    46 / 208  fSTEP    47 / 208  fSTEP    48 / 208  fSTEP    49 / 208  fSTEP    50 / 208  fSTEP    51 / 208  fSTEP    52 / 208  fSTEP    53 / 208  fSTEP    54 / 208  fSTEP    55 / 208  fSTEP    56 / 208  fSTEP    57 / 208  fSTEP    58 / 208  fSTEP    59 / 208  fSTEP    60 / 208  fSTEP    61 / 208  fSTEP    62 / 208  fSTEP    63 / 208  fSTEP    64 / 208  fSTEP    65 / 208  fSTEP    66 / 208  fSTEP    67 / 208  fSTEP    68 / 208  fSTEP    69 / 208  fSTEP    70 / 208  fSTEP    71 / 208  fSTEP    72 / 208  fSTEP    73 / 208  fSTEP    74 / 208  fSTEP    75 / 208  fSTEP    76 / 208  fSTEP    77 / 208  fSTEP    78 / 208  fSTEP    79 / 208  fSTEP    80 / 208  fSTEP    81 / 208  fSTEP    82 / 208  fSTEP    83 / 208  fSTEP    84 / 208  fSTEP    85 / 208  fSTEP    86 / 208  fSTEP    87 / 208  fSTEP    88 / 208  fSTEP    89 / 208  fSTEP    90 / 208  fSTEP    91 / 208  fSTEP    92 / 208  fSTEP    93 / 208  fSTEP    94 / 208  fSTEP    95 / 208  fSTEP    96 / 208  fSTEP    97 / 208  fSTEP    98 / 208  fSTEP    99 / 208  fSTEP   100 / 208  fSTEP   101 / 208  fSTEP   102 / 208  fSTEP   103 / 208  fSTEP   104 / 208  fSTEP   105 / 208  fSTEP   106 / 208  fSTEP   107 / 208  fSTEP   108 / 208  fSTEP   109 / 208  fSTEP   110 / 208  fSTEP   111 / 208  fSTEP   112 / 208  fSTEP   113 / 208  fSTEP   114 / 208  fSTEP   115 / 208  fSTEP   116 / 208  fSTEP   117 / 208  fSTEP   118 / 208  fSTEP   119 / 208  fSTEP   120 / 208  fSTEP   121 / 208  fSTEP   122 / 208  fSTEP   123 / 208  fSTEP   124 / 208  fSTEP   125 / 208  fSTEP   126 / 208  fSTEP   127 / 208  fSTEP   128 / 208  fSTEP   129 / 208  fSTEP   130 / 208  fSTEP   131 / 208  fSTEP   132 / 208  fSTEP   133 / 208  fSTEP   134 / 208  fSTEP   135 / 208  fSTEP   136 / 208  fSTEP   137 / 208  fSTEP   138 / 208  fSTEP   139 / 208  fSTEP   140 / 208  fSTEP   141 / 208  fSTEP   142 / 208  fSTEP   143 / 208  fSTEP   144 / 208  fSTEP   145 / 208  fSTEP   146 / 208  fSTEP   147 / 208  fSTEP   148 / 208  fSTEP   149 / 208  fSTEP   150 / 208  fSTEP   151 / 208  fSTEP   152 / 208  fSTEP   153 / 208  fSTEP   154 / 208  fSTEP   155 / 208  fSTEP   156 / 208  fSTEP   157 / 208  fSTEP   158 / 208  fSTEP   159 / 208  fSTEP   160 / 208  fSTEP   161 / 208  fSTEP   162 / 208  fSTEP   163 / 208  fSTEP   164 / 208  fSTEP   165 / 208  fSTEP   166 / 208  fSTEP   167 / 208  fSTEP   168 / 208  fSTEP   169 / 208  fSTEP   170 / 208  fSTEP   171 / 208  fSTEP   172 / 208  fSTEP   173 / 208  fSTEP   174 / 208  fSTEP   175 / 208  fSTEP   176 / 208  fSTEP   177 / 208  fSTEP   178 / 208  fSTEP   179 / 208  fSTEP   180 / 208  fSTEP   181 / 208  fSTEP   182 / 208  fSTEP   183 / 208  f
+Reallocating..done. *alloclen = 2497
+STEP   184 / 208  fSTEP   185 / 208  fSTEP   186 / 208  fSTEP   187 / 208  fSTEP   188 / 208  fSTEP   189 / 208  fSTEP   190 / 208  fSTEP   191 / 208  fSTEP   192 / 208  fSTEP   193 / 208  fSTEP   194 / 208  fSTEP   195 / 208  fSTEP   196 / 208  fSTEP   197 / 208  fSTEP   198 / 208  fSTEP   199 / 208  fSTEP   200 / 208  fSTEP   201 / 208  fSTEP   202 / 208  fSTEP   203 / 208  fSTEP   204 / 208  fSTEP   205 / 208  fSTEP   206 / 208  fSTEP   207 / 208  fSTEP   208 / 208  f
+done.
+
+Making a distance matrix from msa.. 
+    0 / 209  100 / 209  200 / 209
+done.
+
+Constructing a UPGMA tree (efffree=1) ... 
+    0 / 209   10 / 209   20 / 209   30 / 209   40 / 209   50 / 209   60 / 209   70 / 209   80 / 209   90 / 209  100 / 209  110 / 209  120 / 209  130 / 209  140 / 209  150 / 209  160 / 209  170 / 209  180 / 209  190 / 209  200 / 209
+done.
+
+Progressive alignment 2/2... 
+STEP     1 / 208  fSTEP     2 / 208  fSTEP     3 / 208  fSTEP     4 / 208  fSTEP     5 / 208  fSTEP     6 / 208  fSTEP     7 / 208  fSTEP     8 / 208  fSTEP     9 / 208  fSTEP    10 / 208  fSTEP    11 / 208  fSTEP    12 / 208  fSTEP    13 / 208  fSTEP    14 / 208  fSTEP    15 / 208  fSTEP    16 / 208  fSTEP    17 / 208  fSTEP    18 / 208  fSTEP    19 / 208  fSTEP    20 / 208  fSTEP    21 / 208  fSTEP    22 / 208  fSTEP    23 / 208  fSTEP    24 / 208  fSTEP    25 / 208  fSTEP    26 / 208  fSTEP    27 / 208  fSTEP    28 / 208  fSTEP    29 / 208  fSTEP    30 / 208  fSTEP    31 / 208  fSTEP    32 / 208  fSTEP    33 / 208  fSTEP    34 / 208  fSTEP    35 / 208  fSTEP    36 / 208  fSTEP    37 / 208  fSTEP    38 / 208  fSTEP    39 / 208  fSTEP    40 / 208  fSTEP    41 / 208  fSTEP    42 / 208  fSTEP    43 / 208  fSTEP    44 / 208  fSTEP    45 / 208  fSTEP    46 / 208  fSTEP    47 / 208  fSTEP    48 / 208  fSTEP    49 / 208  fSTEP    50 / 208  fSTEP    51 / 208  fSTEP    52 / 208  fSTEP    53 / 208  fSTEP    54 / 208  fSTEP    55 / 208  fSTEP    56 / 208  fSTEP    57 / 208  fSTEP    58 / 208  fSTEP    59 / 208  fSTEP    60 / 208  fSTEP    61 / 208  fSTEP    62 / 208  fSTEP    63 / 208  fSTEP    64 / 208  fSTEP    65 / 208  fSTEP    66 / 208  fSTEP    67 / 208  fSTEP    68 / 208  fSTEP    69 / 208  fSTEP    70 / 208  fSTEP    71 / 208  fSTEP    72 / 208  fSTEP    73 / 208  fSTEP    74 / 208  fSTEP    75 / 208  fSTEP    76 / 208  fSTEP    77 / 208  fSTEP    78 / 208  fSTEP    79 / 208  fSTEP    80 / 208  fSTEP    81 / 208  fSTEP    82 / 208  fSTEP    83 / 208  fSTEP    84 / 208  fSTEP    85 / 208  fSTEP    86 / 208  fSTEP    87 / 208  fSTEP    88 / 208  fSTEP    89 / 208  fSTEP    90 / 208  fSTEP    91 / 208  fSTEP    92 / 208  fSTEP    93 / 208  fSTEP    94 / 208  fSTEP    95 / 208  fSTEP    96 / 208  fSTEP    97 / 208  fSTEP    98 / 208  fSTEP    99 / 208  fSTEP   100 / 208  fSTEP   101 / 208  fSTEP   102 / 208  fSTEP   103 / 208  fSTEP   104 / 208  fSTEP   105 / 208  fSTEP   106 / 208  fSTEP   107 / 208  fSTEP   108 / 208  fSTEP   109 / 208  fSTEP   110 / 208  fSTEP   111 / 208  fSTEP   112 / 208  fSTEP   113 / 208  fSTEP   114 / 208  fSTEP   115 / 208  fSTEP   116 / 208  fSTEP   117 / 208  fSTEP   118 / 208  fSTEP   119 / 208  fSTEP   120 / 208  fSTEP   121 / 208  fSTEP   122 / 208  fSTEP   123 / 208  fSTEP   124 / 208  fSTEP   125 / 208  fSTEP   126 / 208  fSTEP   127 / 208  fSTEP   128 / 208  fSTEP   129 / 208  fSTEP   130 / 208  fSTEP   131 / 208  fSTEP   132 / 208  fSTEP   133 / 208  fSTEP   134 / 208  fSTEP   135 / 208  fSTEP   136 / 208  fSTEP   137 / 208  fSTEP   138 / 208  fSTEP   139 / 208  fSTEP   140 / 208  fSTEP   141 / 208  fSTEP   142 / 208  fSTEP   143 / 208  fSTEP   144 / 208  fSTEP   145 / 208  fSTEP   146 / 208  fSTEP   147 / 208  fSTEP   148 / 208  fSTEP   149 / 208  fSTEP   150 / 208  fSTEP   151 / 208  fSTEP   152 / 208  fSTEP   153 / 208  fSTEP   154 / 208  fSTEP   155 / 208  fSTEP   156 / 208  fSTEP   157 / 208  fSTEP   158 / 208  fSTEP   159 / 208  fSTEP   160 / 208  fSTEP   161 / 208  fSTEP   162 / 208  fSTEP   163 / 208  fSTEP   164 / 208  fSTEP   165 / 208  fSTEP   166 / 208  fSTEP   167 / 208  fSTEP   168 / 208  fSTEP   169 / 208  fSTEP   170 / 208  fSTEP   171 / 208  fSTEP   172 / 208  fSTEP   173 / 208  fSTEP   174 / 208  fSTEP   175 / 208  fSTEP   176 / 208  fSTEP   177 / 208  fSTEP   178 / 208  fSTEP   179 / 208  fSTEP   180 / 208  fSTEP   181 / 208  fSTEP   182 / 208  f
+Reallocating..done. *alloclen = 2431
+STEP   183 / 208  fSTEP   184 / 208  fSTEP   185 / 208  fSTEP   186 / 208  fSTEP   187 / 208  fSTEP   188 / 208  fSTEP   189 / 208  fSTEP   190 / 208  fSTEP   191 / 208  fSTEP   192 / 208  fSTEP   193 / 208  fSTEP   194 / 208  fSTEP   195 / 208  fSTEP   196 / 208  fSTEP   197 / 208  fSTEP   198 / 208  fSTEP   199 / 208  fSTEP   200 / 208  fSTEP   201 / 208  fSTEP   202 / 208  fSTEP   203 / 208  fSTEP   204 / 208  fSTEP   205 / 208  fSTEP   206 / 208  fSTEP   207 / 208  fSTEP   208 / 208  f
+done.
+
+disttbfast (nuc) Version 7.505
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+
+Strategy:
+ FFT-NS-2 (Fast but rough)
+ Progressive method (guide trees were built 2 times.)
+
+If unsure which option to use, try 'mafft --auto input > output'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+It tends to insert more gaps into gap-rich regions than previous versions.
+To disable this change, add the --leavegappyregion option.
+
+
+muscle 5.1.linux64 [12f0e2]  528Gb RAM, 64 cores
+Built Jan 13 2022 23:17:13
+(C) Copyright 2004-2021 Robert C. Edgar.
+https://drive5.com
+
+
+WARNING: 17 duplicate labels
+
+Input: 209 seqs, avg length 269, max 711
+
+00:00 6.2Mb  CPU has 64 cores, defaulting to 20 threads
+
+WARNING: Max OMP threads 8
+
+00:00 132Mb   0.0046% Calc posteriors00:01 539Mb     3.1% Calc posteriors 00:02 540Mb     5.9% Calc posteriors00:03 541Mb     9.1% Calc posteriors00:04 543Mb    12.1% Calc posteriors00:05 543Mb    15.3% Calc posteriors00:06 545Mb    18.3% Calc posteriors00:07 554Mb    21.4% Calc posteriors00:08 546Mb    24.3% Calc posteriors00:09 547Mb    27.3% Calc posteriors00:10 548Mb    30.2% Calc posteriors00:11 549Mb    33.3% Calc posteriors00:12 550Mb    36.3% Calc posteriors00:13 552Mb    39.2% Calc posteriors00:14 552Mb    42.2% Calc posteriors00:15 553Mb    45.0% Calc posteriors00:16 553Mb    48.0% Calc posteriors00:17 555Mb    50.7% Calc posteriors00:18 555Mb    53.9% Calc posteriors00:19 557Mb    56.4% Calc posteriors00:20 557Mb    59.6% Calc posteriors00:21 559Mb    62.5% Calc posteriors00:22 559Mb    65.1% Calc posteriors00:23 561Mb    68.1% Calc posteriors00:24 561Mb    70.6% Calc posteriors00:25 562Mb    73.9% Calc posteriors00:26 562Mb    75.9% Calc posteriors00:27 562Mb    78.8% Calc posteriors00:28 562Mb    80.8% Calc posteriors00:29 562Mb    82.9% Calc posteriors00:30 562Mb    84.6% Calc posteriors00:31 562Mb    86.5% Calc posteriors00:32 562Mb    87.7% Calc posteriors00:33 562Mb    88.6% Calc posteriors00:34 562Mb    89.5% Calc posteriors00:35 562Mb    90.0% Calc posteriors00:36 562Mb    90.5% Calc posteriors00:37 562Mb    91.0% Calc posteriors00:38 562Mb    91.4% Calc posteriors00:39 562Mb    91.9% Calc posteriors00:40 562Mb    92.1% Calc posteriors00:41 562Mb    92.2% Calc posteriors00:42 562Mb    92.3% Calc posteriors00:43 562Mb    92.4% Calc posteriors00:44 562Mb    92.6% Calc posteriors00:45 562Mb    92.7% Calc posteriors00:46 562Mb    92.8% Calc posteriors00:47 562Mb    92.9% Calc posteriors00:48 562Mb    93.1% Calc posteriors00:49 562Mb    93.2% Calc posteriors00:50 562Mb    93.3% Calc posteriors00:51 562Mb    93.4% Calc posteriors00:52 562Mb    93.6% Calc posteriors00:53 562Mb    93.7% Calc posteriors00:54 562Mb    93.8% Calc posteriors00:55 562Mb    93.9% Calc posteriors00:56 562Mb    94.0% Calc posteriors00:57 562Mb    94.1% Calc posteriors00:58 562Mb    94.2% Calc posteriors00:59 562Mb    94.3% Calc posteriors01:00 562Mb    94.5% Calc posteriors01:01 562Mb    94.6% Calc posteriors01:02 562Mb    94.7% Calc posteriors01:03 562Mb    94.8% Calc posteriors01:04 562Mb    95.0% Calc posteriors01:05 562Mb    95.1% Calc posteriors01:06 562Mb    95.2% Calc posteriors01:07 562Mb    95.3% Calc posteriors01:08 562Mb    95.4% Calc posteriors01:09 562Mb    95.6% Calc posteriors01:10 562Mb    95.7% Calc posteriors01:11 562Mb    95.8% Calc posteriors01:12 562Mb    95.9% Calc posteriors01:13 562Mb    96.0% Calc posteriors01:14 562Mb    96.2% Calc posteriors01:15 562Mb    96.3% Calc posteriors01:16 562Mb    96.4% Calc posteriors01:17 562Mb    96.5% Calc posteriors01:18 562Mb    96.6% Calc posteriors01:19 562Mb    96.7% Calc posteriors01:20 562Mb    96.9% Calc posteriors01:21 562Mb    97.1% Calc posteriors01:22 562Mb    97.2% Calc posteriors01:23 562Mb    97.3% Calc posteriors01:24 562Mb    97.4% Calc posteriors01:25 562Mb    97.5% Calc posteriors01:26 562Mb    97.6% Calc posteriors01:27 562Mb    97.7% Calc posteriors01:28 562Mb    97.8% Calc posteriors01:29 562Mb    97.9% Calc posteriors01:30 562Mb    98.0% Calc posteriors01:31 562Mb    98.1% Calc posteriors01:32 562Mb    98.2% Calc posteriors01:33 562Mb    98.3% Calc posteriors01:34 562Mb    98.4% Calc posteriors01:35 566Mb    98.5% Calc posteriors01:36 566Mb    98.6% Calc posteriors01:37 566Mb    98.7% Calc posteriors01:38 568Mb    98.8% Calc posteriors01:39 570Mb    98.8% Calc posteriors01:40 571Mb    98.9% Calc posteriors01:41 571Mb    99.0% Calc posteriors01:42 571Mb    99.0% Calc posteriors01:43 571Mb    99.1% Calc posteriors01:44 571Mb    99.2% Calc posteriors01:45 576Mb    99.2% Calc posteriors01:46 576Mb    99.3% Calc posteriors01:47 578Mb    99.4% Calc posteriors01:48 578Mb    99.4% Calc posteriors01:49 578Mb    99.5% Calc posteriors01:50 578Mb    99.6% Calc posteriors01:51 578Mb    99.6% Calc posteriors01:52 578Mb    99.7% Calc posteriors01:53 578Mb    99.8% Calc posteriors01:54 578Mb    99.8% Calc posteriors01:55 578Mb    99.9% Calc posteriors01:56 578Mb   100.0% Calc posteriors01:56 578Mb   100.0% Calc posteriors
+01:56 578Mb   0.0046% Consistency (1/2)01:57 578Mb    0.72% Consistency (1/2) 01:58 578Mb     2.2% Consistency (1/2)01:59 578Mb     3.9% Consistency (1/2)02:00 578Mb     5.5% Consistency (1/2)02:01 578Mb     7.4% Consistency (1/2)02:02 645Mb     9.0% Consistency (1/2)02:03 645Mb    10.7% Consistency (1/2)02:04 645Mb    12.3% Consistency (1/2)02:05 645Mb    13.9% Consistency (1/2)02:06 645Mb    15.2% Consistency (1/2)02:07 645Mb    16.8% Consistency (1/2)02:08 645Mb    18.2% Consistency (1/2)02:09 645Mb    19.7% Consistency (1/2)02:10 645Mb    21.3% Consistency (1/2)02:11 645Mb    22.8% Consistency (1/2)02:12 645Mb    24.4% Consistency (1/2)02:13 645Mb    26.0% Consistency (1/2)02:14 645Mb    27.5% Consistency (1/2)02:15 645Mb    29.2% Consistency (1/2)02:16 645Mb    30.7% Consistency (1/2)02:17 645Mb    32.3% Consistency (1/2)02:18 645Mb    33.7% Consistency (1/2)02:19 645Mb    35.5% Consistency (1/2)02:20 645Mb    37.0% Consistency (1/2)02:21 645Mb    38.5% Consistency (1/2)02:22 645Mb    40.3% Consistency (1/2)02:23 645Mb    41.8% Consistency (1/2)02:24 645Mb    43.5% Consistency (1/2)02:25 645Mb    45.0% Consistency (1/2)02:26 645Mb    46.7% Consistency (1/2)02:27 645Mb    48.4% Consistency (1/2)02:28 645Mb    50.0% Consistency (1/2)02:29 645Mb    51.6% Consistency (1/2)02:30 645Mb    53.1% Consistency (1/2)02:31 645Mb    54.8% Consistency (1/2)02:32 645Mb    56.3% Consistency (1/2)02:33 645Mb    57.9% Consistency (1/2)02:34 645Mb    59.4% Consistency (1/2)02:35 645Mb    61.1% Consistency (1/2)02:36 645Mb    62.7% Consistency (1/2)02:37 645Mb    64.2% Consistency (1/2)02:38 645Mb    65.9% Consistency (1/2)02:39 645Mb    67.5% Consistency (1/2)02:40 645Mb    68.9% Consistency (1/2)02:41 645Mb    70.4% Consistency (1/2)02:42 645Mb    72.0% Consistency (1/2)02:43 645Mb    73.4% Consistency (1/2)02:44 645Mb    74.9% Consistency (1/2)02:45 645Mb    76.3% Consistency (1/2)02:46 645Mb    77.9% Consistency (1/2)02:47 645Mb    79.4% Consistency (1/2)02:48 646Mb    80.8% Consistency (1/2)02:49 647Mb    82.2% Consistency (1/2)02:50 647Mb    83.8% Consistency (1/2)02:51 647Mb    85.2% Consistency (1/2)02:52 647Mb    86.6% Consistency (1/2)02:53 648Mb    88.1% Consistency (1/2)02:54 649Mb    89.4% Consistency (1/2)02:55 649Mb    90.8% Consistency (1/2)02:56 649Mb    91.9% Consistency (1/2)02:57 649Mb    92.8% Consistency (1/2)02:58 650Mb    93.6% Consistency (1/2)02:59 650Mb    94.0% Consistency (1/2)03:00 650Mb    94.2% Consistency (1/2)03:01 650Mb    94.4% Consistency (1/2)03:02 650Mb    94.5% Consistency (1/2)03:03 650Mb    94.7% Consistency (1/2)03:04 650Mb    94.9% Consistency (1/2)03:05 650Mb    95.0% Consistency (1/2)03:06 650Mb    95.2% Consistency (1/2)03:07 650Mb    95.3% Consistency (1/2)03:08 650Mb    95.5% Consistency (1/2)03:09 650Mb    95.7% Consistency (1/2)03:10 650Mb    95.9% Consistency (1/2)03:11 650Mb    96.0% Consistency (1/2)03:12 650Mb    96.2% Consistency (1/2)03:13 650Mb    96.4% Consistency (1/2)03:14 650Mb    96.6% Consistency (1/2)03:15 650Mb    96.8% Consistency (1/2)03:16 650Mb    96.9% Consistency (1/2)03:17 650Mb    97.2% Consistency (1/2)03:18 650Mb    97.4% Consistency (1/2)03:19 650Mb    97.6% Consistency (1/2)03:20 650Mb    97.8% Consistency (1/2)03:21 650Mb    98.0% Consistency (1/2)03:22 650Mb    98.3% Consistency (1/2)03:23 650Mb    98.6% Consistency (1/2)03:24 650Mb    98.8% Consistency (1/2)03:25 650Mb    99.0% Consistency (1/2)03:26 650Mb    99.3% Consistency (1/2)03:27 650Mb    99.5% Consistency (1/2)03:28 650Mb    99.8% Consistency (1/2)03:28 650Mb   100.0% Consistency (1/2)
+03:28 650Mb   0.0046% Consistency (2/2)03:29 650Mb    0.56% Consistency (2/2) 03:30 651Mb     2.1% Consistency (2/2)03:31 651Mb     3.8% Consistency (2/2)03:32 651Mb     5.4% Consistency (2/2)03:33 651Mb     7.1% Consistency (2/2)03:34 651Mb     8.9% Consistency (2/2)03:35 651Mb    10.5% Consistency (2/2)03:36 651Mb    12.2% Consistency (2/2)03:37 651Mb    13.8% Consistency (2/2)03:38 651Mb    15.1% Consistency (2/2)03:39 651Mb    16.6% Consistency (2/2)03:40 651Mb    18.0% Consistency (2/2)03:41 651Mb    19.6% Consistency (2/2)03:42 651Mb    21.2% Consistency (2/2)03:43 651Mb    22.6% Consistency (2/2)03:44 651Mb    24.2% Consistency (2/2)03:45 651Mb    25.9% Consistency (2/2)03:46 651Mb    27.3% Consistency (2/2)03:47 651Mb    29.0% Consistency (2/2)03:48 651Mb    30.5% Consistency (2/2)03:49 651Mb    32.2% Consistency (2/2)03:50 651Mb    33.6% Consistency (2/2)03:51 651Mb    35.3% Consistency (2/2)03:52 651Mb    36.9% Consistency (2/2)03:53 651Mb    38.3% Consistency (2/2)03:54 651Mb    40.1% Consistency (2/2)03:55 651Mb    41.6% Consistency (2/2)03:56 651Mb    43.3% Consistency (2/2)03:57 651Mb    44.8% Consistency (2/2)03:58 651Mb    46.5% Consistency (2/2)03:59 651Mb    48.2% Consistency (2/2)04:00 651Mb    49.8% Consistency (2/2)04:01 651Mb    51.4% Consistency (2/2)04:02 651Mb    53.0% Consistency (2/2)04:03 651Mb    54.6% Consistency (2/2)04:04 651Mb    56.2% Consistency (2/2)04:05 651Mb    57.8% Consistency (2/2)04:06 651Mb    59.3% Consistency (2/2)04:07 651Mb    61.0% Consistency (2/2)04:08 651Mb    62.6% Consistency (2/2)04:09 651Mb    64.0% Consistency (2/2)04:10 651Mb    65.6% Consistency (2/2)04:11 651Mb    67.3% Consistency (2/2)04:12 651Mb    68.8% Consistency (2/2)04:13 651Mb    70.2% Consistency (2/2)04:14 651Mb    71.7% Consistency (2/2)04:15 651Mb    73.2% Consistency (2/2)04:16 651Mb    74.8% Consistency (2/2)04:17 651Mb    76.2% Consistency (2/2)04:18 651Mb    77.7% Consistency (2/2)04:19 651Mb    79.3% Consistency (2/2)04:20 651Mb    80.6% Consistency (2/2)04:21 651Mb    82.1% Consistency (2/2)04:22 651Mb    83.6% Consistency (2/2)04:23 651Mb    85.0% Consistency (2/2)04:24 651Mb    86.4% Consistency (2/2)04:25 651Mb    87.9% Consistency (2/2)04:26 651Mb    89.3% Consistency (2/2)04:27 651Mb    90.6% Consistency (2/2)04:28 651Mb    91.8% Consistency (2/2)04:29 651Mb    92.8% Consistency (2/2)04:30 651Mb    93.6% Consistency (2/2)04:31 651Mb    94.1% Consistency (2/2)04:32 651Mb    94.2% Consistency (2/2)04:33 651Mb    94.4% Consistency (2/2)04:34 651Mb    94.5% Consistency (2/2)04:35 651Mb    94.7% Consistency (2/2)04:36 651Mb    94.8% Consistency (2/2)04:37 651Mb    94.9% Consistency (2/2)04:38 651Mb    95.1% Consistency (2/2)04:39 651Mb    95.3% Consistency (2/2)04:40 651Mb    95.5% Consistency (2/2)04:41 651Mb    95.6% Consistency (2/2)04:42 651Mb    95.7% Consistency (2/2)04:43 651Mb    95.9% Consistency (2/2)04:44 651Mb    96.1% Consistency (2/2)04:45 651Mb    96.2% Consistency (2/2)04:46 651Mb    96.4% Consistency (2/2)04:47 651Mb    96.5% Consistency (2/2)04:48 651Mb    96.7% Consistency (2/2)04:49 651Mb    96.9% Consistency (2/2)04:50 651Mb    97.2% Consistency (2/2)04:51 651Mb    97.4% Consistency (2/2)04:52 651Mb    97.6% Consistency (2/2)04:53 651Mb    97.8% Consistency (2/2)04:54 651Mb    98.0% Consistency (2/2)04:55 651Mb    98.4% Consistency (2/2)04:56 651Mb    98.6% Consistency (2/2)04:57 651Mb    98.8% Consistency (2/2)04:58 651Mb    99.1% Consistency (2/2)04:59 651Mb    99.3% Consistency (2/2)05:00 651Mb    99.6% Consistency (2/2)05:01 651Mb    99.9% Consistency (2/2)05:01 651Mb   100.0% Consistency (2/2)
+05:01 651Mb    0.48% UPGMA5           05:01 651Mb   100.0% UPGMA5
+05:01 657Mb     1.0% Refining05:02 663Mb     7.0% Refining05:03 669Mb    21.0% Refining05:04 675Mb    34.0% Refining05:05 680Mb    47.0% Refining05:06 686Mb    60.0% Refining05:07 692Mb    73.0% Refining05:08 697Mb    85.0% Refining05:09 703Mb    98.0% Refining05:09 704Mb   100.0% Refining
+
+Determining smart-gap threshold...
+
+-------------
+| Arguments |
+-------------
+Input file: Mojave2020.Glomero.fasaln (format: fasta)
+Output file: Mojave2020.Glomero.fasaln.clipkit (format: fasta)
+Gaps threshold: 0.6842
+Trimming mode: smart-gap
+Create complementary output: False
+Create log file: False
+
+
+------------------------
+| Processing Alignment |
+------------------------
+
+  0%|          | 0/1000 [00:00<?, ?it/s] 42%|████▏     | 415/1000 [00:00<00:00, 4144.37it/s] 83%|████████▎ | 830/1000 [00:00<00:00, 4087.95it/s]100%|██████████| 1000/1000 [00:00<00:00, 4097.01it/s]
+
+
+------------------------
+| Writing output files |
+------------------------
+trimmed alignment: Mojave2020.Glomero.fasaln.clipkit
+complement file: False
+log file: False
+
+
+---------------------
+| Output Statistics |
+---------------------
+Number of sites kept: 313
+Number of sites trimmed: 687
+
+Percentage of alignment trimmed: 68.7%
+
+Execution time: 0.591s
+
+
+Determining smart-gap threshold...
+
+-------------
+| Arguments |
+-------------
+Input file: Mojave2020.Glomero.muscle.fasaln (format: fasta)
+Output file: Mojave2020.Glomero.muscle.fasaln.clipkit (format: fasta)
+Gaps threshold: 0.9761
+Trimming mode: smart-gap
+Create complementary output: False
+Create log file: False
+
+
+------------------------
+| Processing Alignment |
+------------------------
+
+  0%|          | 0/1680 [00:00<?, ?it/s] 24%|██▍       | 407/1680 [00:00<00:00, 4061.40it/s] 49%|████▊     | 815/1680 [00:00<00:00, 4069.59it/s] 73%|███████▎  | 1222/1680 [00:00<00:00, 4066.73it/s] 97%|█████████▋| 1629/1680 [00:00<00:00, 4003.30it/s]100%|██████████| 1680/1680 [00:00<00:00, 4024.39it/s]
+
+
+------------------------
+| Writing output files |
+------------------------
+trimmed alignment: Mojave2020.Glomero.muscle.fasaln.clipkit
+complement file: False
+log file: False
+
+
+---------------------
+| Output Statistics |
+---------------------
+Number of sites kept: 853
+Number of sites trimmed: 827
+
+Percentage of alignment trimmed: 49.226%
+
+Execution time: 1.003s
+
+IQ-TREE multicore version 2.2.2.6 COVID-edition for Linux 64-bit built May 27 2023
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    i03 (AVX2, FMA3, 503 GB RAM)
+Command: iqtree2 -nt AUTO -s Mojave2020.Glomero.fasaln.clipkit -alrt 1000 -bb 1000 -m MFP
+Seed:    357858 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Apr 11 12:01:27 2024
+Kernel:  AVX+FMA - auto-detect threads (8 CPU cores detected)
+
+Reading alignment file Mojave2020.Glomero.fasaln.clipkit ... Fasta format detected
+Reading fasta file: done in 0.00107217 secs using 71.44% CPU
+NOTE: Change sequence name 'Glomeraceae Glomus Konig10 group Ab ITS' -> Glomeraceae_Glomus_Konig10_group
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'Glomeraceae Glomus intraradices ITS' -> Glomeraceae_Glomus_intraradices_ITS
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'Glomeraceae Glomus irregulare ITS' -> Glomeraceae_Glomus_irregulare_ITS
+NOTE: Change sequence name 'Glomeraceae Glomus sinuosum ITS' -> Glomeraceae_Glomus_sinuosum_ITS
+NOTE: Change sequence name 'Glomeraceae Glomus sp. ITS' -> Glomeraceae_Glomus_sp._ITS
+NOTE: Change sequence name 'Glomeraceae Glomus Konig10 Sequence type 3 ITS' -> Glomeraceae_Glomus_Konig10_Sequence
+NOTE: Change sequence name 'Glomeraceae Rhizophagus arabicus 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Rhizophagus_arabicus_18S
+NOTE: Change sequence name 'Glomeraceae Glomus Hijri06 Glom-A3 18S rDNA+ITS' -> Glomeraceae_Glomus_Hijri06_Glom-A3
+NOTE: Change sequence name 'Glomeraceae Glomus Wubet04 Glom17 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_Wubet04_Glom17
+NOTE: Change sequence name 'Glomeraceae Glomus Hijri06 Glom-A1 18S rDNA+ITS' -> Glomeraceae_Glomus_Hijri06_Glom-A1
+NOTE: Change sequence name 'Glomeraceae Glomus Wubet04 Glom12 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_Wubet04_Glom12
+NOTE: Change sequence name 'Glomeraceae Glomus custos ITS' -> Glomeraceae_Glomus_custos_ITS
+NOTE: Change sequence name 'Glomeraceae Glomus Wang11 Glo1 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_Wang11_Glo1
+NOTE: Change sequence name 'Glomeraceae Glomus cubense ITS' -> Glomeraceae_Glomus_cubense_ITS
+NOTE: Change sequence name 'Glomeraceae Rhizoglomus dunense 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Rhizoglomus_dunense_18S
+NOTE: Change sequence name 'Diversisporaceae Diversispora sp. W5257 18S rDNA+ITS+28S rDNA' -> Diversisporaceae_Diversispora_sp._W5257
+NOTE: Change sequence name 'Glomeraceae Glomus OTU60 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_OTU60_18S
+NOTE: Change sequence name 'Glomeraceae Glomus intraradices 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_intraradices_18S
+NOTE: Change sequence name 'Glomeraceae Glomus proliferum ITS' -> Glomeraceae_Glomus_proliferum_ITS
+NOTE: Change sequence name 'Glomeraceae Glomus Wang11 Glo7 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_Wang11_Glo7
+NOTE: Change sequence name 'Glomeraceae Glomus BV-RED-5 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_BV-RED-5_18S
+NOTE: Change sequence name 'Glomeraceae Glomus Galvan09 GloA3 18S rDNA+ITS' -> Glomeraceae_Glomus_Galvan09_GloA3
+NOTE: Change sequence name 'Glomeraceae Glomus OTU29 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_OTU29_18S
+NOTE: Change sequence name 'Glomeraceae Glomus Wang11 Glo22 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_Wang11_Glo22
+NOTE: Change sequence name 'Glomeraceae Glomus Konig10 Sequence type 1 ITS' -> Glomeraceae_Glomus_Konig10_Sequence
+NOTE: Change sequence name 'Glomeraceae Glomus Fahey12 S6 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_Fahey12_S6
+NOTE: Change sequence name 'Mortierella globalpina CBS 360.70 ITS region; from TYPE material' -> Mortierella_globalpina_CBS_360.70
+NOTE: Change sequence name 'NR_186946.1 Septoglomus mediterraneum VAL Myco1626 ITS region; from TYPE material' -> NR_186946.1_Septoglomus_mediterraneum_VAL
+NOTE: Change sequence name 'NR_186945.1 Funneliformis pilosus VAL Myco1629 ITS region; from TYPE material' -> NR_186945.1_Funneliformis_pilosus_VAL
+NOTE: Change sequence name 'NR_185673.1 Gigaspora polymorphira HMAS 255790 ITS region; from TYPE material' -> NR_185673.1_Gigaspora_polymorphira_HMAS
+NOTE: Change sequence name 'NR_185672.1 Gigaspora polymorphira HMAS 255790 ITS region; from TYPE material' -> NR_185672.1_Gigaspora_polymorphira_HMAS
+NOTE: Change sequence name 'NR_168761.1 Racocetra crispa URM 88221 ITS region; from TYPE material' -> NR_168761.1_Racocetra_crispa_URM
+NOTE: Change sequence name 'NR_168426.1 Archaeospora ecuadoriana E W5337 ITS region; from TYPE material' -> NR_168426.1_Archaeospora_ecuadoriana_E
+NOTE: Change sequence name 'NR_168424.1 Dentiscutata savannicola E W5538 ITS region; from TYPE material' -> NR_168424.1_Dentiscutata_savannicola_E
+NOTE: Change sequence name 'NR_121477.1 Redeckera megalocarpum LIP CL/Guad05-051 ITS region; from TYPE material' -> NR_121477.1_Redeckera_megalocarpum_LIP
+NOTE: Change sequence name 'NR_121448.1 Glomus macrocarpum E W5581 ITS region; from TYPE material' -> NR_121448.1_Glomus_macrocarpum_E
+NOTE: Change sequence name 'NR_121441.1 Acaulospora entreriana E W5476 ITS region; from TYPE material' -> NR_121441.1_Acaulospora_entreriana_E
+NOTE: Change sequence name 'NR_121437.1 Acaulospora spinosa E W3574 ITS region; from TYPE material' -> NR_121437.1_Acaulospora_spinosa_E
+NOTE: Change sequence name 'NR_121431.1 Acaulospora colombiana E W5795 ITS region; from TYPE material' -> NR_121431.1_Acaulospora_colombiana_E
+NOTE: Change sequence name 'NR_121422.1 Diversispora spurca E W4119 ITS region; from TYPE material' -> NR_121422.1_Diversispora_spurca_E
+NOTE: Change sequence name 'NR_121408.1 Acaulospora laevis BEG 13 ITS region; from TYPE material' -> NR_121408.1_Acaulospora_laevis_BEG
+NOTE: Change sequence name 'NR_121401.1 Rhizophagus proliferus MUCL 41827 ITS region; from TYPE material' -> NR_121401.1_Rhizophagus_proliferus_MUCL
+NOTE: Change sequence name 'NR_121400.1 Funneliformis mosseae BEG 12 ITS region; from TYPE material' -> NR_121400.1_Funneliformis_mosseae_BEG
+NOTE: Change sequence name 'NR_121385.1 Rhizophagus proliferus MUCL 41827 ITS region; from TYPE material' -> NR_121385.1_Rhizophagus_proliferus_MUCL
+NOTE: Change sequence name 'NR_121369.1 Cetraspora nodosa BEG 4 ITS region; from TYPE material' -> NR_121369.1_Cetraspora_nodosa_BEG
+NOTE: Change sequence name 'NR_121362.1 Acaulospora cavernata BEG 33 ITS region; from TYPE material' -> NR_121362.1_Acaulospora_cavernata_BEG
+NOTE: Change sequence name 'NR_121292.1 Redeckera megalocarpum LIP CL/Guad05-051 ITS region; from TYPE material' -> NR_121292.1_Redeckera_megalocarpum_LIP
+NOTE: Change sequence name 'NR_121280.1 Diversispora aurantia J Blaszkowski 2444 ITS region; from TYPE material' -> NR_121280.1_Diversispora_aurantia_J
+NOTE: Change sequence name 'NR_119545.1 Paraglomus occultum INVAM IA702 ITS region; from reference material' -> NR_119545.1_Paraglomus_occultum_INVAM
+NOTE: Change sequence name 'NR_111108.1 Racocetra castanea BEG 1 ITS region; from TYPE material' -> NR_111108.1_Racocetra_castanea_BEG
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.000900984 secs using 543.2% CPU
+Alignment has 192 sequences with 313 columns, 231 distinct patterns
+170 parsimony-informative, 42 singleton sites, 100 constant sites
+ERROR: Duplicated sequence name Glomeraceae_Glomus_Konig10_Sequence
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._18S
+ERROR: Please rename sequences listed above!
+IQ-TREE multicore version 2.2.2.6 COVID-edition for Linux 64-bit built May 27 2023
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    i03 (AVX2, FMA3, 503 GB RAM)
+Command: iqtree2 -nt AUTO -s Mojave2020.Glomero.muscle.fasaln.clipkit -alrt 1000 -bb 1000 -m MFP
+Seed:    370881 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Apr 11 12:01:27 2024
+Kernel:  AVX+FMA - auto-detect threads (8 CPU cores detected)
+
+Reading alignment file Mojave2020.Glomero.muscle.fasaln.clipkit ... Fasta format detected
+Reading fasta file: done in 0.00280809 secs using 82.97% CPU
+NOTE: Change sequence name 'Glomeraceae Glomus Hijri06 Glom-A1 18S rDNA+ITS' -> Glomeraceae_Glomus_Hijri06_Glom-A1
+NOTE: Change sequence name 'Glomeraceae Glomus intraradices ITS dupelabel2' -> Glomeraceae_Glomus_intraradices_ITS
+NOTE: Change sequence name 'NR_121280.1 Diversispora aurantia J Blaszkowski 2444 ITS region; from TYPE material' -> NR_121280.1_Diversispora_aurantia_J
+NOTE: Change sequence name 'NR_186946.1 Septoglomus mediterraneum VAL Myco1626 ITS region; from TYPE material' -> NR_186946.1_Septoglomus_mediterraneum_VAL
+NOTE: Change sequence name 'NR_119545.1 Paraglomus occultum INVAM IA702 ITS region; from reference material' -> NR_119545.1_Paraglomus_occultum_INVAM
+NOTE: Change sequence name 'NR_111108.1 Racocetra castanea BEG 1 ITS region; from TYPE material' -> NR_111108.1_Racocetra_castanea_BEG
+NOTE: Change sequence name 'Glomeraceae Glomus Wang11 Glo7 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_Wang11_Glo7
+NOTE: Change sequence name 'NR_121400.1 Funneliformis mosseae BEG 12 ITS region; from TYPE material' -> NR_121400.1_Funneliformis_mosseae_BEG
+NOTE: Change sequence name 'Glomeraceae Glomus Wubet04 Glom12 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_Wubet04_Glom12
+NOTE: Change sequence name 'Glomeraceae Glomus BV-RED-5 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_BV-RED-5_18S
+NOTE: Change sequence name 'Glomeraceae Glomus Hijri06 Glom-A3 18S rDNA+ITS' -> Glomeraceae_Glomus_Hijri06_Glom-A3
+NOTE: Change sequence name 'NR_121292.1 Redeckera megalocarpum LIP CL/Guad05-051 ITS region; from TYPE material' -> NR_121292.1_Redeckera_megalocarpum_LIP
+NOTE: Change sequence name 'Glomeraceae Glomus sp. ITS dupelabel3' -> Glomeraceae_Glomus_sp._ITS
+NOTE: Change sequence name 'Glomeraceae Glomus intraradices 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_intraradices_18S
+NOTE: Change sequence name 'Glomeraceae Glomus Konig10 group Ab ITS' -> Glomeraceae_Glomus_Konig10_group
+NOTE: Change sequence name 'Glomeraceae Glomus sp. ITS dupelabel2' -> Glomeraceae_Glomus_sp._ITS
+NOTE: Change sequence name 'Glomeraceae Glomus irregulare ITS' -> Glomeraceae_Glomus_irregulare_ITS
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA dupelabel4' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'Glomeraceae Rhizophagus arabicus 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Rhizophagus_arabicus_18S
+NOTE: Change sequence name 'Glomeraceae Glomus proliferum ITS dupelabel1' -> Glomeraceae_Glomus_proliferum_ITS
+NOTE: Change sequence name 'Glomeraceae Glomus OTU29 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_OTU29_18S
+NOTE: Change sequence name 'Glomeraceae Glomus Wang11 Glo1 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_Wang11_Glo1
+NOTE: Change sequence name 'NR_185672.1 Gigaspora polymorphira HMAS 255790 ITS region; from TYPE material' -> NR_185672.1_Gigaspora_polymorphira_HMAS
+NOTE: Change sequence name 'Glomeraceae Glomus sp. ITS dupelabel1' -> Glomeraceae_Glomus_sp._ITS
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'NR_121362.1 Acaulospora cavernata BEG 33 ITS region; from TYPE material' -> NR_121362.1_Acaulospora_cavernata_BEG
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS dupelabel2' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'Glomeraceae Glomus Fahey12 S6 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_Fahey12_S6
+NOTE: Change sequence name 'NR_186945.1 Funneliformis pilosus VAL Myco1629 ITS region; from TYPE material' -> NR_186945.1_Funneliformis_pilosus_VAL
+NOTE: Change sequence name 'NR_121477.1 Redeckera megalocarpum LIP CL/Guad05-051 ITS region; from TYPE material' -> NR_121477.1_Redeckera_megalocarpum_LIP
+NOTE: Change sequence name 'Glomeraceae Glomus proliferum ITS' -> Glomeraceae_Glomus_proliferum_ITS
+NOTE: Change sequence name 'Glomeraceae Rhizoglomus dunense 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Rhizoglomus_dunense_18S
+NOTE: Change sequence name 'NR_121448.1 Glomus macrocarpum E W5581 ITS region; from TYPE material' -> NR_121448.1_Glomus_macrocarpum_E
+NOTE: Change sequence name 'Glomeraceae Glomus custos ITS' -> Glomeraceae_Glomus_custos_ITS
+NOTE: Change sequence name 'Glomeraceae Glomus sp. ITS dupelabel5' -> Glomeraceae_Glomus_sp._ITS
+NOTE: Change sequence name 'Glomeraceae Glomus Galvan09 GloA3 18S rDNA+ITS' -> Glomeraceae_Glomus_Galvan09_GloA3
+NOTE: Change sequence name 'NR_121369.1 Cetraspora nodosa BEG 4 ITS region; from TYPE material' -> NR_121369.1_Cetraspora_nodosa_BEG
+NOTE: Change sequence name 'NR_168424.1 Dentiscutata savannicola E W5538 ITS region; from TYPE material' -> NR_168424.1_Dentiscutata_savannicola_E
+NOTE: Change sequence name 'Glomeraceae Glomus sinuosum ITS' -> Glomeraceae_Glomus_sinuosum_ITS
+NOTE: Change sequence name 'Glomeraceae Glomus intraradices ITS dupelabel1' -> Glomeraceae_Glomus_intraradices_ITS
+NOTE: Change sequence name 'Glomeraceae Glomus Konig10 Sequence type 1 ITS' -> Glomeraceae_Glomus_Konig10_Sequence
+NOTE: Change sequence name 'Glomeraceae Glomus Wang11 Glo22 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_Wang11_Glo22
+NOTE: Change sequence name 'NR_168761.1 Racocetra crispa URM 88221 ITS region; from TYPE material' -> NR_168761.1_Racocetra_crispa_URM
+NOTE: Change sequence name 'NR_121401.1 Rhizophagus proliferus MUCL 41827 ITS region; from TYPE material' -> NR_121401.1_Rhizophagus_proliferus_MUCL
+NOTE: Change sequence name 'NR_121422.1 Diversispora spurca E W4119 ITS region; from TYPE material' -> NR_121422.1_Diversispora_spurca_E
+NOTE: Change sequence name 'NR_168426.1 Archaeospora ecuadoriana E W5337 ITS region; from TYPE material' -> NR_168426.1_Archaeospora_ecuadoriana_E
+NOTE: Change sequence name 'NR_121437.1 Acaulospora spinosa E W3574 ITS region; from TYPE material' -> NR_121437.1_Acaulospora_spinosa_E
+NOTE: Change sequence name 'Glomeraceae Glomus intraradices ITS' -> Glomeraceae_Glomus_intraradices_ITS
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS dupelabel1' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'Glomeraceae Glomus Hijri06 Glom-A3 18S rDNA+ITS dupelabel1' -> Glomeraceae_Glomus_Hijri06_Glom-A3
+NOTE: Change sequence name 'NR_121385.1 Rhizophagus proliferus MUCL 41827 ITS region; from TYPE material' -> NR_121385.1_Rhizophagus_proliferus_MUCL
+NOTE: Change sequence name 'Diversisporaceae Diversispora sp. W5257 18S rDNA+ITS+28S rDNA' -> Diversisporaceae_Diversispora_sp._W5257
+NOTE: Change sequence name 'NR_121408.1 Acaulospora laevis BEG 13 ITS region; from TYPE material' -> NR_121408.1_Acaulospora_laevis_BEG
+NOTE: Change sequence name 'Glomeraceae Glomus cubense ITS' -> Glomeraceae_Glomus_cubense_ITS
+NOTE: Change sequence name 'Glomeraceae Glomus OTU60 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_OTU60_18S
+NOTE: Change sequence name 'NR_121441.1 Acaulospora entreriana E W5476 ITS region; from TYPE material' -> NR_121441.1_Acaulospora_entreriana_E
+NOTE: Change sequence name 'Mortierella globalpina CBS 360.70 ITS region; from TYPE material' -> Mortierella_globalpina_CBS_360.70
+NOTE: Change sequence name 'Glomeraceae Glomus Konig10 Sequence type 3 ITS' -> Glomeraceae_Glomus_Konig10_Sequence
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'Glomeraceae Glomus Wubet04 Glom17 18S rDNA+ITS+28S rDNA' -> Glomeraceae_Glomus_Wubet04_Glom17
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA dupelabel3' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS dupelabel3' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'NR_185673.1 Gigaspora polymorphira HMAS 255790 ITS region; from TYPE material' -> NR_185673.1_Gigaspora_polymorphira_HMAS
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA dupelabel1' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'Glomeraceae Glomus sp. ITS' -> Glomeraceae_Glomus_sp._ITS
+NOTE: Change sequence name 'NR_121431.1 Acaulospora colombiana E W5795 ITS region; from TYPE material' -> NR_121431.1_Acaulospora_colombiana_E
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA dupelabel2' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS dupelabel4' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'Glomeraceae Glomus sp. ITS dupelabel4' -> Glomeraceae_Glomus_sp._ITS
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.0040071 secs using 631.8% CPU
+Alignment has 209 sequences with 853 columns, 631 distinct patterns
+493 parsimony-informative, 88 singleton sites, 272 constant sites
+ERROR: Duplicated sequence name Glomeraceae_Glomus_Hijri06_Glom-A3
+ERROR: Duplicated sequence name Glomeraceae_Glomus_Konig10_Sequence
+ERROR: Duplicated sequence name Glomeraceae_Glomus_intraradices_ITS
+ERROR: Duplicated sequence name Glomeraceae_Glomus_intraradices_ITS
+ERROR: Duplicated sequence name Glomeraceae_Glomus_proliferum_ITS
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._18S
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._18S
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._18S
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._18S
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._18S
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._18S
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._18S
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._18S
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._18S
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._ITS
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._ITS
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._ITS
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._ITS
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._ITS
+ERROR: Please rename sequences listed above!

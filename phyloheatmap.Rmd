@@ -1,0 +1,313 @@
+---
+title: "Mojave_Div_ITS_phyloseq"
+author: "Nat Pombubpa"
+date: "Updated on December 11, 2019"
+output: html_document
+---
+
+#Fungal taxonomic barplot by site
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+###STEP1: Load all necessary packages for analysis
+More information about Phyloseq can be found at the following link: [Phyloseq](https://joey711.github.io/phyloseq/)
+If you get error in this step, you probably need to install any packages which causes error.
+
+```{r warning=FALSE, message=FALSE}
+library(ape)
+library(vegan)
+library(dplyr)
+library(scales)
+library(grid)
+library(reshape2)
+library(phyloseq)
+library(magrittr)
+library(ggplot2)
+library(ggpubr)
+library(plyr)
+library(data.table)
+library(tidyr)
+library(tidyverse)
+library(multcompView)
+library(ggtree)
+library(treeio)
+library(devtools)
+library(MicEco)
+library(MoMAColors)
+
+```
+
+###STEP2: Import Mapping file (metadate file)
+1.Check mapping file before import to R, R doesn’t seem to like sample name to start with number or contain “-” in sample name. If you get error in this step, you should check file name first.
+
+2.First column of first row should not start with #, R will not read the first row that starts with #
+
+3. You can choose which samples to include in analysis by indicating "KEEP" in Description column
+
+```{r}
+meta = read.table("Metadata_KHK2.tsv",header=TRUE,row.names=1,sep="\t",stringsAsFactors=FALSE)
+```
+
+If need to keep or remove some samples
+```{r}
+#meta <- meta[which(meta$Layer %in% c("Surface")),]
+```
+
+###STEP3: Check if your metadata file has been import successfully and correctly
+
+The output will show a table of your metadata file (mapping file).
+
+*If you do not have header, you might start your first row with #
+
+```{r warning=FALSE}
+head(meta)
+```
+
+###STEP4: Construct sample_data-class using imported metadata
+
+```{r}
+sampleData <- sample_data(meta)
+```
+
+###STEP5: Import OTU table
+
+OTU table from Mojave 16S data is “MC2017FC.otu_table.txt”.
+MC-Mojave Crust-2017-FC-Fungi completed
+
+```{r}
+otus <- read.table("Mojave2020_KKelly202307.otu_table.txt",header=T,sep="\t",row.names=1)
+otumat <- as(as.matrix(otus), "matrix")
+OTU = otu_table(otumat, taxa_are_rows = TRUE)
+```
+
+Check imported OTU table
+
+```{r warning=FALSE}
+head(OTU)
+```
+
+###STEP6: Import taxonomy table
+Taxonmy table generated from AMPtk need to be rearranged using following script.
+
+“perl rdp_taxonmy2mat.pl<Input_taxonmy.txt>Output_taxonomy.txt”
+
+rdp_taxonomy2mat.pl was created by Professor Jason E. Stajich
+
+```{r}
+taxmat <- read.table("Mojave2020_KKelly202307.ASVs.taxonomy.fix.txt", header=T,sep="\t",row.names=1)
+taxmat <- as(as.matrix(taxmat),"matrix")
+TAX = tax_table(taxmat)
+```
+
+###STEP7: Import phylogenetic tree
+Phylogenetic tree can also be include for further phylogenetic analysis.
+
+```{r warning=FALSE}
+treefile = "Mojave2020_KKelly202307.ASVs.tree.phy"
+tree = read.tree(treefile)
+```
+
+###STEP8: Construct Phyloseq object
+To construct phyloseq object, otu table, taxonomy table, and sampleData are required. Phylogenetic tree can be included, but it is not necessary for constructing phyloseq object.
+Construct Phyloseq object called "Physeq"
+
+```{r warning=FALSE}
+physeq = phyloseq(OTU,TAX,sampleData,tree)
+```
+
+Check phyloseq object
+This should indicate that your physeq is a "phyloseq-class experiment-level object""
+
+```{r warning=FALSE}
+physeq
+```
+
+###STEP9: Remove singletons
+Remove any OTUs that present only one time.
+
+```{r }
+physeq.prune = prune_taxa(taxa_sums(physeq) > 1, physeq)
+```
+
+```{r warning=FALSE}
+physeq.prune
+```
+
+###STEP10: Plot read counts to check dataset
+Check read counts: any samples that have very low reads should be removed.
+[Ref](http://evomics.org/wp-content/uploads/2016/01/phyloseq-Lab-01-Answers.html)
+
+```{r}
+readcount = data.table(as(sample_data(physeq.prune), "data.frame"),
+                 TotalReads = sample_sums(physeq.prune), 
+                 keep.rownames = TRUE)
+setnames(readcount, "rn", "SampleID")
+
+#For plotting, use command below.
+#SeqDepth = ggplot(readcount, aes(TotalReads)) + geom_histogram() + ggtitle("Sequencing Depth")
+```
+
+TotalReads of all the samples can be in this table (select only SampleID and TotalReads columns).
+In order to check samples with low number of reads, "order()" can be used to sort "TotalReads" column.
+In this dataset, N55.Rhizo has very low number of reads, so will will filter this sample out using the next minimum number of reads.
+```{r}
+readcount = readcount[order(readcount$TotalReads), c("SampleID", "TotalReads")]
+```
+
+```{r}
+head(readcount)
+```
+
+```{r warning=FALSE}
+set.seed(1)
+physeq.prune.rarefy = rarefy_even_depth(physeq.prune, sample.size = 7909, replace = FALSE, trimOTUs = FALSE)
+physeq.prune.rarefy
+```
+
+###STEP11: Glomeromycete trees
+
+```{r}
+# Subset taxa for Glomus and Rhizoglomus
+physeq.prune.rarefy.Glomeromycetes <- subset_taxa(physeq.prune.rarefy, Genus %in% c("Glomus", "Rhizophagus"))
+physeq.prune.rarefy.Glomeromycetes
+
+```
+
+```{r}
+p1 <- plot_tree(physeq.prune.rarefy.Glomeromycetes, color="Crust_type", shape="Site", label.tips="Genus", size="abundance", plot.margin=0.3)
+p1
+```
+
+```{r}
+p1 <- plot_tree(physeq.prune.rarefy.Glomeromycetes, color="Crust_type", shape="Site", label.tips="Species", size="abundance", plot.margin=0.3)
+p1
+```
+
+```{r}
+
+tax_table(physeq.prune.rarefy.Glomeromycetes)
+
+```
+
+```{r}
+
+phy_tree(physeq.prune.rarefy.Glomeromycetes)
+
+
+
+# Plot the modified tree
+p2 <- ggtree(phy_tree(physeq.prune.rarefy.Glomeromycetes), layout="rectangular") +
+  geom_tiplab(size=2, color="black")
+#p2
+
+```
+
+
+```{r}
+#Dali <- moma.colors("Dali")
+
+# Generate a larger palette of colors
+#dali_palette <- moma.colors("Dali", n = 200)
+
+# Subset the palette to include 100 colors
+#palette_100 <- dali_palette[1:100]
+
+# Display the first few colors in the palette
+#head(palette_100)
+```
+
+
+
+```{r}
+
+# Extract species names from the taxonomy table
+species_names <- tax_table(physeq.prune.rarefy.Glomeromycetes)[, "Genus"]
+
+species_names[is.na(species_names)] <- "Unknown AMF"
+
+
+# Get the tip labels (ASV IDs) from the phylogenetic tree
+tip_labels <- phy_tree(physeq.prune.rarefy.Glomeromycetes)$tip.label
+
+# Match ASV IDs with species names and replace tip labels
+new_tip_labels <- species_names[match(tip_labels, rownames(species_names))]
+
+new_tip_labels
+```
+```{r}
+
+object <- phy_tree(physeq.prune.rarefy.Glomeromycetes)
+
+tiplabels <- object$tip.label
+
+new_tip_labels <- paste(tiplabels, new_tip_labels, sep = " ")
+
+object$tip.label <- new_tip_labels
+
+object
+```
+
+```{r}
+
+# Plot the modified tree with species names as tip labels
+p3 <- ggtree(object, layout="rectangular") +
+  geom_tiplab(size=1, color="black")
+
+
+#p3
+```
+
+```{r}
+
+# Define the number of colors you want in the palette
+num_colors <- 100
+
+# Generate the palette from white to red
+palette_white_to_red <- colorRampPalette(c("aquamarine4", "yellow1", "darkorange"))(num_colors)
+
+# Display the first few colors in the palette
+head(palette_white_to_red)
+```
+
+
+```{r}
+# Get the OTU table
+otu_table <- otu_table(physeq.prune.rarefy.Glomeromycetes)
+
+species_names[is.na(species_names)] <- "Unknown Glomeromycete"
+
+# Replace row names in the OTU table with species names
+rownames(otu_table) <- new_tip_labels
+
+# Get the sample data from the phyloseq object
+sample_data <- as.data.frame(sample_data(physeq.prune.rarefy.Glomeromycetes))
+
+# Extract the variables you want to use as column names (e.g., soil type, site)
+column_names <- paste(sample_data$Crust_type, sample_data$Site, sep = " ")
+
+
+
+log_otu_table <- log10(otu_table + 1)  # Adding 1 to avoid log(0)
+
+# Replace column names in the OTU table
+colnames(log_otu_table) <- column_names
+
+colnames(log_otu_table) <- make.unique(colnames(log_otu_table))
+
+
+p_heatmap <- gheatmap(p3, log_otu_table, width=4, offset=0.25, 
+                      legend_title="Relative Abundance", colnames_position="bottom", 
+                      colnames_angle=45, colnames_offset_y=0, hjust=1, font.size=1.25) +
+  scale_fill_gradientn("Relative abundance", colours = palette_white_to_red) +
+  scale_y_continuous(limits=c(-2, 25)) + theme_tree(legend.position="right")
+plot(p_heatmap)
+```
+
+```{r}
+
+# Save the heatmap as a file
+ggsave("glomeromycete.png", plot = p_heatmap, width = 8, height = 6)
+
+```

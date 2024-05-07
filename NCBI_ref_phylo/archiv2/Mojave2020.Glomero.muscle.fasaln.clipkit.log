@@ -1,0 +1,162 @@
+IQ-TREE multicore version 2.2.2.6 COVID-edition for Linux 64-bit built May 27 2023
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    i03 (AVX2, FMA3, 503 GB RAM)
+Command: iqtree2 -nt AUTO -s Mojave2020.Glomero.muscle.fasaln.clipkit -alrt 1000 -bb 1000 -m MFP
+Seed:    90459 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Apr 10 21:08:00 2024
+Kernel:  AVX+FMA - auto-detect threads (8 CPU cores detected)
+
+Reading alignment file Mojave2020.Glomero.muscle.fasaln.clipkit ... Fasta format detected
+Reading fasta file: done in 0.00275588 secs using 96.41% CPU
+NOTE: Change sequence name 'gi|MOA06940|gb|AJ872048| Glomeraceae Glomus sp. 18S rDNA+ITS' -> gi|MOA06940|gb|AJ872048|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA01063|gb|FR686958| Diversisporaceae Diversispora sp. W5257 18S rDNA+ITS+28S rDNA' -> gi|MOA01063|gb|FR686958|_Diversisporaceae_Diversispora_sp.
+NOTE: Change sequence name 'gi|MOA06824|gb|GQ205071| Glomeraceae Glomus sp. ITS dupelabel1' -> gi|MOA06824|gb|GQ205071|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA05216|gb|HM570003| Glomeraceae Glomus Wang11 Glo22 18S rDNA+ITS+28S rDNA' -> gi|MOA05216|gb|HM570003|_Glomeraceae_Glomus_Wang11
+NOTE: Change sequence name 'gi|MOA06192|gb|FJ008655| Glomeraceae Glomus sp. ITS dupelabel1' -> gi|MOA06192|gb|FJ008655|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA06945|gb|AJ872053| Glomeraceae Glomus Hijri06 Glom-A3 18S rDNA+ITS' -> gi|MOA06945|gb|AJ872053|_Glomeraceae_Glomus_Hijri06
+NOTE: Change sequence name 'gi|MOA05651|gb|FJ769318| Glomeraceae Glomus Konig10 group Ab ITS' -> gi|MOA05651|gb|FJ769318|_Glomeraceae_Glomus_Konig10
+NOTE: Change sequence name 'gi|MOA04591|gb|FR873161| Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA dupelabel4' -> gi|MOA04591|gb|FR873161|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA06746|gb|AY929101| Glomeraceae Glomus sp. 18S rDNA+ITS' -> gi|MOA06746|gb|AY929101|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA06123|gb|JX096623| Glomeraceae Glomus OTU60 18S rDNA+ITS+28S rDNA' -> gi|MOA06123|gb|JX096623|_Glomeraceae_Glomus_OTU60
+NOTE: Change sequence name 'gi|MOA05646|gb|FJ769323| Glomeraceae Glomus Konig10 Sequence type 3 ITS dupelabel1' -> gi|MOA05646|gb|FJ769323|_Glomeraceae_Glomus_Konig10
+NOTE: Change sequence name 'gi|MOA06870|gb|AM980862| Glomeraceae Glomus intraradices ITS' -> gi|MOA06870|gb|AM980862|_Glomeraceae_Glomus_intraradices
+NOTE: Change sequence name 'gi|MOA06966|gb|AM114024| Glomeraceae Glomus Hijri06 Glom-A1 18S rDNA+ITS dupelabel5' -> gi|MOA06966|gb|AM114024|_Glomeraceae_Glomus_Hijri06
+NOTE: Change sequence name 'gi|MOA06185|gb|FJ008646| Glomeraceae Glomus sp. ITS' -> gi|MOA06185|gb|FJ008646|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA05646|gb|FJ769323| Glomeraceae Glomus Konig10 Sequence type 3 ITS' -> gi|MOA05646|gb|FJ769323|_Glomeraceae_Glomus_Konig10
+NOTE: Change sequence name 'gi|MOA06945|gb|AJ872053| Glomeraceae Glomus Hijri06 Glom-A3 18S rDNA+ITS dupelabel1' -> gi|MOA06945|gb|AJ872053|_Glomeraceae_Glomus_Hijri06
+NOTE: Change sequence name 'gi|MOA04626|gb|AY236276| Glomeraceae Glomus Wubet04 Glom17 18S rDNA+ITS+28S rDNA' -> gi|MOA04626|gb|AY236276|_Glomeraceae_Glomus_Wubet04
+NOTE: Change sequence name 'gi|MOA06966|gb|AM114024| Glomeraceae Glomus Hijri06 Glom-A1 18S rDNA+ITS dupelabel2' -> gi|MOA06966|gb|AM114024|_Glomeraceae_Glomus_Hijri06
+NOTE: Change sequence name 'gi|MOA06869|gb|AM980861| Glomeraceae Glomus intraradices ITS dupelabel1' -> gi|MOA06869|gb|AM980861|_Glomeraceae_Glomus_intraradices
+NOTE: Change sequence name 'gi|MOA06639|gb|KF154765| Glomeraceae Rhizophagus arabicus 18S rDNA+ITS+28S rDNA' -> gi|MOA06639|gb|KF154765|_Glomeraceae_Rhizophagus_arabicus
+NOTE: Change sequence name 'gi|MOA04626|gb|AY236276| Glomeraceae Glomus Wubet04 Glom17 18S rDNA+ITS+28S rDNA dupelabel3' -> gi|MOA04626|gb|AY236276|_Glomeraceae_Glomus_Wubet04
+NOTE: Change sequence name 'gi|MOA06828|gb|GQ205079| Glomeraceae Glomus proliferum ITS' -> gi|MOA06828|gb|GQ205079|_Glomeraceae_Glomus_proliferum
+NOTE: Change sequence name 'gi|MOA06966|gb|AM114024| Glomeraceae Glomus Hijri06 Glom-A1 18S rDNA+ITS dupelabel3' -> gi|MOA06966|gb|AM114024|_Glomeraceae_Glomus_Hijri06
+NOTE: Change sequence name 'gi|MOA04233|gb|JF692724| Glomeraceae Glomus cubense ITS dupelabel2' -> gi|MOA04233|gb|JF692724|_Glomeraceae_Glomus_cubense
+NOTE: Change sequence name 'gi|MOA06850|gb|AM980836| Glomeraceae Glomus intraradices ITS dupelabel4' -> gi|MOA06850|gb|AM980836|_Glomeraceae_Glomus_intraradices
+NOTE: Change sequence name 'gi|MOA06966|gb|AM114024| Glomeraceae Glomus Hijri06 Glom-A1 18S rDNA+ITS dupelabel4' -> gi|MOA06966|gb|AM114024|_Glomeraceae_Glomus_Hijri06
+NOTE: Change sequence name 'gi|MOA06869|gb|AM980861| Glomeraceae Glomus intraradices ITS dupelabel2' -> gi|MOA06869|gb|AM980861|_Glomeraceae_Glomus_intraradices
+NOTE: Change sequence name 'gi|MOA04591|gb|FR873161| Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA dupelabel2' -> gi|MOA04591|gb|FR873161|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA06071|gb|JX096571| Glomeraceae Glomus OTU29 18S rDNA+ITS+28S rDNA' -> gi|MOA06071|gb|JX096571|_Glomeraceae_Glomus_OTU29
+NOTE: Change sequence name 'gi|MOA06441|gb|AY744278| Glomeraceae Glomus sp. 18S rDNA+ITS dupelabel2' -> gi|MOA06441|gb|AY744278|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA05651|gb|FJ769318| Glomeraceae Glomus Konig10 group Ab ITS dupelabel1' -> gi|MOA05651|gb|FJ769318|_Glomeraceae_Glomus_Konig10
+NOTE: Change sequence name 'gi|MOA06850|gb|AM980836| Glomeraceae Glomus intraradices ITS dupelabel6' -> gi|MOA06850|gb|AM980836|_Glomeraceae_Glomus_intraradices
+NOTE: Change sequence name 'gi|MOA06752|gb|AY929133| Glomeraceae Glomus sp. 18S rDNA+ITS' -> gi|MOA06752|gb|AY929133|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA06123|gb|JX096623| Glomeraceae Glomus OTU60 18S rDNA+ITS+28S rDNA dupelabel1' -> gi|MOA06123|gb|JX096623|_Glomeraceae_Glomus_OTU60
+NOTE: Change sequence name 'gi|MOA06192|gb|FJ008655| Glomeraceae Glomus sp. ITS' -> gi|MOA06192|gb|FJ008655|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA06954|gb|AJ872063| Glomeraceae Glomus Hijri06 Glom-A3 18S rDNA+ITS dupelabel2' -> gi|MOA06954|gb|AJ872063|_Glomeraceae_Glomus_Hijri06
+NOTE: Change sequence name 'gi|MOA06441|gb|AY744278| Glomeraceae Glomus sp. 18S rDNA+ITS dupelabel3' -> gi|MOA06441|gb|AY744278|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA05255|gb|HQ243182| Glomeraceae Glomus Wang11 Glo7 18S rDNA+ITS+28S rDNA' -> gi|MOA05255|gb|HQ243182|_Glomeraceae_Glomus_Wang11
+NOTE: Change sequence name 'gi|MOA06746|gb|AY929101| Glomeraceae Glomus sp. 18S rDNA+ITS dupelabel1' -> gi|MOA06746|gb|AY929101|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA06850|gb|AM980836| Glomeraceae Glomus intraradices ITS dupelabel2' -> gi|MOA06850|gb|AM980836|_Glomeraceae_Glomus_intraradices
+NOTE: Change sequence name 'gi|MOA04233|gb|JF692724| Glomeraceae Glomus cubense ITS dupelabel1' -> gi|MOA04233|gb|JF692724|_Glomeraceae_Glomus_cubense
+NOTE: Change sequence name 'gi|MOA06824|gb|GQ205071| Glomeraceae Glomus sp. ITS' -> gi|MOA06824|gb|GQ205071|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA06810|gb|GQ205056| Glomeraceae Glomus irregulare ITS' -> gi|MOA06810|gb|GQ205056|_Glomeraceae_Glomus_irregulare
+NOTE: Change sequence name 'gi|MOA06828|gb|GQ205079| Glomeraceae Glomus proliferum ITS dupelabel2' -> gi|MOA06828|gb|GQ205079|_Glomeraceae_Glomus_proliferum
+NOTE: Change sequence name 'gi|MOA06441|gb|AY744278| Glomeraceae Glomus sp. 18S rDNA+ITS dupelabel1' -> gi|MOA06441|gb|AY744278|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA04591|gb|FR873161| Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA' -> gi|MOA04591|gb|FR873161|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA05284|gb|HQ243422| Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA' -> gi|MOA05284|gb|HQ243422|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA06071|gb|JX096571| Glomeraceae Glomus OTU29 18S rDNA+ITS+28S rDNA dupelabel1' -> gi|MOA06071|gb|JX096571|_Glomeraceae_Glomus_OTU29
+NOTE: Change sequence name 'gi|MOA05652|gb|FJ769317| Glomeraceae Glomus Konig10 Sequence type 1 ITS' -> gi|MOA05652|gb|FJ769317|_Glomeraceae_Glomus_Konig10
+NOTE: Change sequence name 'gi|MOA06954|gb|AJ872063| Glomeraceae Glomus Hijri06 Glom-A3 18S rDNA+ITS' -> gi|MOA06954|gb|AJ872063|_Glomeraceae_Glomus_Hijri06
+NOTE: Change sequence name 'gi|MOA06850|gb|AM980836| Glomeraceae Glomus intraradices ITS dupelabel3' -> gi|MOA06850|gb|AM980836|_Glomeraceae_Glomus_intraradices
+NOTE: Change sequence name 'gi|MOA03828|gb|FM865602| Glomeraceae Glomus intraradices 18S rDNA+ITS+28S rDNA' -> gi|MOA03828|gb|FM865602|_Glomeraceae_Glomus_intraradices
+NOTE: Change sequence name 'gi|ESA02340|gb|EF393611| Glomeraceae Glomus BV-RED-5 18S rDNA+ITS+28S rDNA' -> gi|ESA02340|gb|EF393611|_Glomeraceae_Glomus_BV-RED-5
+NOTE: Change sequence name 'gi|MOA06441|gb|AY744278| Glomeraceae Glomus sp. 18S rDNA+ITS' -> gi|MOA06441|gb|AY744278|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA04591|gb|FR873161| Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA dupelabel3' -> gi|MOA04591|gb|FR873161|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA06869|gb|AM980861| Glomeraceae Glomus intraradices ITS' -> gi|MOA06869|gb|AM980861|_Glomeraceae_Glomus_intraradices
+NOTE: Change sequence name 'gi|MOA05430|gb|AJ437106| Glomeraceae Glomus sinuosum ITS' -> gi|MOA05430|gb|AJ437106|_Glomeraceae_Glomus_sinuosum
+NOTE: Change sequence name 'gi|MOA04626|gb|AY236276| Glomeraceae Glomus Wubet04 Glom17 18S rDNA+ITS+28S rDNA dupelabel1' -> gi|MOA04626|gb|AY236276|_Glomeraceae_Glomus_Wubet04
+NOTE: Change sequence name 'gi|MOA06966|gb|AM114024| Glomeraceae Glomus Hijri06 Glom-A1 18S rDNA+ITS' -> gi|MOA06966|gb|AM114024|_Glomeraceae_Glomus_Hijri06
+NOTE: Change sequence name 'gi|MOA04589|gb|FR873159| Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA' -> gi|MOA04589|gb|FR873159|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA05287|gb|HQ263643| Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA' -> gi|MOA05287|gb|HQ263643|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA04459|gb|HQ895793| Glomeraceae Glomus Fahey12 S6 18S rDNA+ITS+28S rDNA' -> gi|MOA04459|gb|HQ895793|_Glomeraceae_Glomus_Fahey12
+NOTE: Change sequence name 'gi|MOA06639|gb|KF154765| Glomeraceae Rhizophagus arabicus 18S rDNA+ITS+28S rDNA dupelabel1' -> gi|MOA06639|gb|KF154765|_Glomeraceae_Rhizophagus_arabicus
+NOTE: Change sequence name 'gi|MOA06826|gb|GQ205077| Glomeraceae Glomus proliferum ITS' -> gi|MOA06826|gb|GQ205077|_Glomeraceae_Glomus_proliferum
+NOTE: Change sequence name 'gi|MOA06850|gb|AM980836| Glomeraceae Glomus intraradices ITS dupelabel7' -> gi|MOA06850|gb|AM980836|_Glomeraceae_Glomus_intraradices
+NOTE: Change sequence name 'gi|MOA06810|gb|GQ205056| Glomeraceae Glomus irregulare ITS dupelabel1' -> gi|MOA06810|gb|GQ205056|_Glomeraceae_Glomus_irregulare
+NOTE: Change sequence name 'gi|MOA06850|gb|AM980836| Glomeraceae Glomus intraradices ITS' -> gi|MOA06850|gb|AM980836|_Glomeraceae_Glomus_intraradices
+NOTE: Change sequence name 'gi|MOA06945|gb|AJ872053| Glomeraceae Glomus Hijri06 Glom-A3 18S rDNA+ITS dupelabel2' -> gi|MOA06945|gb|AJ872053|_Glomeraceae_Glomus_Hijri06
+NOTE: Change sequence name 'gi|MOA06850|gb|AM980836| Glomeraceae Glomus intraradices ITS dupelabel8' -> gi|MOA06850|gb|AM980836|_Glomeraceae_Glomus_intraradices
+NOTE: Change sequence name 'gi|MOA06824|gb|GQ205071| Glomeraceae Glomus sp. ITS dupelabel2' -> gi|MOA06824|gb|GQ205071|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA06188|gb|FJ008650| Glomeraceae Glomus sp. ITS' -> gi|MOA06188|gb|FJ008650|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA06850|gb|AM980836| Glomeraceae Glomus intraradices ITS dupelabel9' -> gi|MOA06850|gb|AM980836|_Glomeraceae_Glomus_intraradices
+NOTE: Change sequence name 'gi|MOA04585|gb|FR873155| Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA' -> gi|MOA04585|gb|FR873155|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA05722|gb|HM162343| Glomeraceae Glomus sp. ITS' -> gi|MOA05722|gb|HM162343|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA26408|gb|KY555054| Glomeraceae Rhizoglomus dunense 18S rDNA+ITS+28S rDNA' -> gi|MOA26408|gb|KY555054|_Glomeraceae_Rhizoglomus_dunense
+NOTE: Change sequence name 'gi|MOA05659|gb|FJ769310| Glomeraceae Glomus sp. ITS dupelabel1' -> gi|MOA05659|gb|FJ769310|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA04453|gb|GQ205075| Glomeraceae Glomus custos ITS' -> gi|MOA04453|gb|GQ205075|_Glomeraceae_Glomus_custos
+NOTE: Change sequence name 'gi|MOA06966|gb|AM114024| Glomeraceae Glomus Hijri06 Glom-A1 18S rDNA+ITS dupelabel1' -> gi|MOA06966|gb|AM114024|_Glomeraceae_Glomus_Hijri06
+NOTE: Change sequence name 'gi|MOA05285|gb|HQ243426| Glomeraceae Glomus Wang11 Glo1 18S rDNA+ITS+28S rDNA' -> gi|MOA05285|gb|HQ243426|_Glomeraceae_Glomus_Wang11
+NOTE: Change sequence name 'gi|MOA06850|gb|AM980836| Glomeraceae Glomus intraradices ITS dupelabel5' -> gi|MOA06850|gb|AM980836|_Glomeraceae_Glomus_intraradices
+NOTE: Change sequence name 'gi|MOA04591|gb|FR873161| Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA dupelabel1' -> gi|MOA04591|gb|FR873161|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA03828|gb|FM865602| Glomeraceae Glomus intraradices 18S rDNA+ITS+28S rDNA dupelabel2' -> gi|MOA03828|gb|FM865602|_Glomeraceae_Glomus_intraradices
+NOTE: Change sequence name 'gi|MOA04233|gb|JF692724| Glomeraceae Glomus cubense ITS' -> gi|MOA04233|gb|JF692724|_Glomeraceae_Glomus_cubense
+NOTE: Change sequence name 'gi|MOA04626|gb|AY236276| Glomeraceae Glomus Wubet04 Glom17 18S rDNA+ITS+28S rDNA dupelabel2' -> gi|MOA04626|gb|AY236276|_Glomeraceae_Glomus_Wubet04
+NOTE: Change sequence name 'gi|MOA03828|gb|FM865602| Glomeraceae Glomus intraradices 18S rDNA+ITS+28S rDNA dupelabel1' -> gi|MOA03828|gb|FM865602|_Glomeraceae_Glomus_intraradices
+NOTE: Change sequence name 'gi|MOA04311|gb|HM159460| Glomeraceae Glomus sp. 18S rDNA+ITS' -> gi|MOA04311|gb|HM159460|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA06441|gb|AY744278| Glomeraceae Glomus sp. 18S rDNA+ITS dupelabel4' -> gi|MOA06441|gb|AY744278|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA06850|gb|AM980836| Glomeraceae Glomus intraradices ITS dupelabel1' -> gi|MOA06850|gb|AM980836|_Glomeraceae_Glomus_intraradices
+NOTE: Change sequence name 'gi|MOA06828|gb|GQ205079| Glomeraceae Glomus proliferum ITS dupelabel1' -> gi|MOA06828|gb|GQ205079|_Glomeraceae_Glomus_proliferum
+NOTE: Change sequence name 'gi|MOA04636|gb|AY236264| Glomeraceae Glomus Wubet04 Glom12 18S rDNA+ITS+28S rDNA' -> gi|MOA04636|gb|AY236264|_Glomeraceae_Glomus_Wubet04
+NOTE: Change sequence name 'gi|MOA05659|gb|FJ769310| Glomeraceae Glomus sp. ITS' -> gi|MOA05659|gb|FJ769310|_Glomeraceae_Glomus_sp.
+NOTE: Change sequence name 'gi|MOA06397|gb|AM992822| Glomeraceae Glomus Galvan09 GloA3 18S rDNA+ITS' -> gi|MOA06397|gb|AM992822|_Glomeraceae_Glomus_Galvan09
+NOTE: Change sequence name 'gi|MOA05651|gb|FJ769318| Glomeraceae Glomus Konig10 group Ab ITS dupelabel2' -> gi|MOA05651|gb|FJ769318|_Glomeraceae_Glomus_Konig10
+NOTE: Change sequence name 'gi|MOA06954|gb|AJ872063| Glomeraceae Glomus Hijri06 Glom-A3 18S rDNA+ITS dupelabel1' -> gi|MOA06954|gb|AJ872063|_Glomeraceae_Glomus_Hijri06
+NOTE: Change sequence name 'gi|MOA06828|gb|GQ205079| Glomeraceae Glomus proliferum ITS dupelabel3' -> gi|MOA06828|gb|GQ205079|_Glomeraceae_Glomus_proliferum
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.00276494 secs using 500.2% CPU
+Alignment has 235 sequences with 663 columns, 526 distinct patterns
+383 parsimony-informative, 86 singleton sites, 194 constant sites
+ERROR: Duplicated sequence name gi|MOA03828|gb|FM865602|_Glomeraceae_Glomus_intraradices
+ERROR: Duplicated sequence name gi|MOA03828|gb|FM865602|_Glomeraceae_Glomus_intraradices
+ERROR: Duplicated sequence name gi|MOA04233|gb|JF692724|_Glomeraceae_Glomus_cubense
+ERROR: Duplicated sequence name gi|MOA04233|gb|JF692724|_Glomeraceae_Glomus_cubense
+ERROR: Duplicated sequence name gi|MOA04591|gb|FR873161|_Glomeraceae_Glomus_sp.
+ERROR: Duplicated sequence name gi|MOA04591|gb|FR873161|_Glomeraceae_Glomus_sp.
+ERROR: Duplicated sequence name gi|MOA04591|gb|FR873161|_Glomeraceae_Glomus_sp.
+ERROR: Duplicated sequence name gi|MOA04591|gb|FR873161|_Glomeraceae_Glomus_sp.
+ERROR: Duplicated sequence name gi|MOA04626|gb|AY236276|_Glomeraceae_Glomus_Wubet04
+ERROR: Duplicated sequence name gi|MOA04626|gb|AY236276|_Glomeraceae_Glomus_Wubet04
+ERROR: Duplicated sequence name gi|MOA04626|gb|AY236276|_Glomeraceae_Glomus_Wubet04
+ERROR: Duplicated sequence name gi|MOA05646|gb|FJ769323|_Glomeraceae_Glomus_Konig10
+ERROR: Duplicated sequence name gi|MOA05651|gb|FJ769318|_Glomeraceae_Glomus_Konig10
+ERROR: Duplicated sequence name gi|MOA05651|gb|FJ769318|_Glomeraceae_Glomus_Konig10
+ERROR: Duplicated sequence name gi|MOA05659|gb|FJ769310|_Glomeraceae_Glomus_sp.
+ERROR: Duplicated sequence name gi|MOA06071|gb|JX096571|_Glomeraceae_Glomus_OTU29
+ERROR: Duplicated sequence name gi|MOA06123|gb|JX096623|_Glomeraceae_Glomus_OTU60
+ERROR: Duplicated sequence name gi|MOA06192|gb|FJ008655|_Glomeraceae_Glomus_sp.
+ERROR: Duplicated sequence name gi|MOA06441|gb|AY744278|_Glomeraceae_Glomus_sp.
+ERROR: Duplicated sequence name gi|MOA06441|gb|AY744278|_Glomeraceae_Glomus_sp.
+ERROR: Duplicated sequence name gi|MOA06441|gb|AY744278|_Glomeraceae_Glomus_sp.
+ERROR: Duplicated sequence name gi|MOA06441|gb|AY744278|_Glomeraceae_Glomus_sp.
+ERROR: Duplicated sequence name gi|MOA06639|gb|KF154765|_Glomeraceae_Rhizophagus_arabicus
+ERROR: Duplicated sequence name gi|MOA06746|gb|AY929101|_Glomeraceae_Glomus_sp.
+ERROR: Duplicated sequence name gi|MOA06810|gb|GQ205056|_Glomeraceae_Glomus_irregulare
+ERROR: Duplicated sequence name gi|MOA06824|gb|GQ205071|_Glomeraceae_Glomus_sp.
+ERROR: Duplicated sequence name gi|MOA06824|gb|GQ205071|_Glomeraceae_Glomus_sp.
+ERROR: Duplicated sequence name gi|MOA06828|gb|GQ205079|_Glomeraceae_Glomus_proliferum
+ERROR: Duplicated sequence name gi|MOA06828|gb|GQ205079|_Glomeraceae_Glomus_proliferum
+ERROR: Duplicated sequence name gi|MOA06828|gb|GQ205079|_Glomeraceae_Glomus_proliferum
+ERROR: Duplicated sequence name gi|MOA06850|gb|AM980836|_Glomeraceae_Glomus_intraradices
+ERROR: Duplicated sequence name gi|MOA06850|gb|AM980836|_Glomeraceae_Glomus_intraradices
+ERROR: Duplicated sequence name gi|MOA06850|gb|AM980836|_Glomeraceae_Glomus_intraradices
+ERROR: Duplicated sequence name gi|MOA06850|gb|AM980836|_Glomeraceae_Glomus_intraradices
+ERROR: Duplicated sequence name gi|MOA06850|gb|AM980836|_Glomeraceae_Glomus_intraradices
+ERROR: Duplicated sequence name gi|MOA06850|gb|AM980836|_Glomeraceae_Glomus_intraradices
+ERROR: Duplicated sequence name gi|MOA06850|gb|AM980836|_Glomeraceae_Glomus_intraradices
+ERROR: Duplicated sequence name gi|MOA06850|gb|AM980836|_Glomeraceae_Glomus_intraradices
+ERROR: Duplicated sequence name gi|MOA06850|gb|AM980836|_Glomeraceae_Glomus_intraradices
+ERROR: Duplicated sequence name gi|MOA06869|gb|AM980861|_Glomeraceae_Glomus_intraradices
+ERROR: Duplicated sequence name gi|MOA06869|gb|AM980861|_Glomeraceae_Glomus_intraradices
+ERROR: Duplicated sequence name gi|MOA06945|gb|AJ872053|_Glomeraceae_Glomus_Hijri06
+ERROR: Duplicated sequence name gi|MOA06945|gb|AJ872053|_Glomeraceae_Glomus_Hijri06
+ERROR: Duplicated sequence name gi|MOA06954|gb|AJ872063|_Glomeraceae_Glomus_Hijri06
+ERROR: Duplicated sequence name gi|MOA06954|gb|AJ872063|_Glomeraceae_Glomus_Hijri06
+ERROR: Duplicated sequence name gi|MOA06966|gb|AM114024|_Glomeraceae_Glomus_Hijri06
+ERROR: Duplicated sequence name gi|MOA06966|gb|AM114024|_Glomeraceae_Glomus_Hijri06
+ERROR: Duplicated sequence name gi|MOA06966|gb|AM114024|_Glomeraceae_Glomus_Hijri06
+ERROR: Duplicated sequence name gi|MOA06966|gb|AM114024|_Glomeraceae_Glomus_Hijri06
+ERROR: Duplicated sequence name gi|MOA06966|gb|AM114024|_Glomeraceae_Glomus_Hijri06
+ERROR: Please rename sequences listed above!

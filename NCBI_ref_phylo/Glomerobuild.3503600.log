@@ -1,0 +1,233 @@
+Loading [1msamtools/1.19.2[22m
+  [94mLoading requirement[0m: libdeflate/1.17 htslib/1.19.1
+[W::fai_get_val] Reference blast_filter$V2 not found in FASTA file, returning empty sequence
+[W::fai_get_val] Reference blast_filter$V2 not found in FASTA file, returning empty sequence
+[faidx] Failed to fetch sequence in blast_filter$V2
+nthread = 0
+nthreadpair = 0
+nthreadtb = 0
+ppenalty_ex = 0
+stacksize: 8192 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+Gap Penalty = -1.53, +0.00, +0.00
+
+
+
+Making a distance matrix ..
+
+There are 1 ambiguous characters.
+    1 / 209  101 / 209  201 / 209
+done.
+
+Constructing a UPGMA tree (efffree=0) ... 
+    0 / 209   10 / 209   20 / 209   30 / 209   40 / 209   50 / 209   60 / 209   70 / 209   80 / 209   90 / 209  100 / 209  110 / 209  120 / 209  130 / 209  140 / 209  150 / 209  160 / 209  170 / 209  180 / 209  190 / 209  200 / 209
+done.
+
+Progressive alignment 1/2... 
+STEP     1 / 208  fSTEP     2 / 208  fSTEP     3 / 208  fSTEP     4 / 208  fSTEP     5 / 208  fSTEP     6 / 208  fSTEP     7 / 208  fSTEP     8 / 208  fSTEP     9 / 208  fSTEP    10 / 208  fSTEP    11 / 208  fSTEP    12 / 208  fSTEP    13 / 208  fSTEP    14 / 208  fSTEP    15 / 208  fSTEP    16 / 208  fSTEP    17 / 208  fSTEP    18 / 208  fSTEP    19 / 208  fSTEP    20 / 208  fSTEP    21 / 208  fSTEP    22 / 208  fSTEP    23 / 208  fSTEP    24 / 208  fSTEP    25 / 208  fSTEP    26 / 208  fSTEP    27 / 208  fSTEP    28 / 208  fSTEP    29 / 208  fSTEP    30 / 208  fSTEP    31 / 208  fSTEP    32 / 208  fSTEP    33 / 208  fSTEP    34 / 208  fSTEP    35 / 208  fSTEP    36 / 208  fSTEP    37 / 208  fSTEP    38 / 208  fSTEP    39 / 208  fSTEP    40 / 208  fSTEP    41 / 208  fSTEP    42 / 208  fSTEP    43 / 208  fSTEP    44 / 208  fSTEP    45 / 208  fSTEP    46 / 208  fSTEP    47 / 208  fSTEP    48 / 208  fSTEP    49 / 208  fSTEP    50 / 208  fSTEP    51 / 208  fSTEP    52 / 208  fSTEP    53 / 208  fSTEP    54 / 208  fSTEP    55 / 208  fSTEP    56 / 208  fSTEP    57 / 208  fSTEP    58 / 208  fSTEP    59 / 208  fSTEP    60 / 208  fSTEP    61 / 208  fSTEP    62 / 208  fSTEP    63 / 208  fSTEP    64 / 208  fSTEP    65 / 208  fSTEP    66 / 208  fSTEP    67 / 208  fSTEP    68 / 208  fSTEP    69 / 208  fSTEP    70 / 208  fSTEP    71 / 208  fSTEP    72 / 208  fSTEP    73 / 208  fSTEP    74 / 208  fSTEP    75 / 208  fSTEP    76 / 208  fSTEP    77 / 208  fSTEP    78 / 208  fSTEP    79 / 208  fSTEP    80 / 208  fSTEP    81 / 208  fSTEP    82 / 208  fSTEP    83 / 208  fSTEP    84 / 208  fSTEP    85 / 208  fSTEP    86 / 208  fSTEP    87 / 208  fSTEP    88 / 208  fSTEP    89 / 208  fSTEP    90 / 208  fSTEP    91 / 208  fSTEP    92 / 208  fSTEP    93 / 208  fSTEP    94 / 208  fSTEP    95 / 208  fSTEP    96 / 208  fSTEP    97 / 208  fSTEP    98 / 208  fSTEP    99 / 208  fSTEP   100 / 208  fSTEP   101 / 208  fSTEP   102 / 208  fSTEP   103 / 208  fSTEP   104 / 208  fSTEP   105 / 208  fSTEP   106 / 208  fSTEP   107 / 208  fSTEP   108 / 208  fSTEP   109 / 208  fSTEP   110 / 208  fSTEP   111 / 208  fSTEP   112 / 208  fSTEP   113 / 208  fSTEP   114 / 208  fSTEP   115 / 208  fSTEP   116 / 208  fSTEP   117 / 208  fSTEP   118 / 208  fSTEP   119 / 208  fSTEP   120 / 208  fSTEP   121 / 208  fSTEP   122 / 208  fSTEP   123 / 208  fSTEP   124 / 208  fSTEP   125 / 208  fSTEP   126 / 208  fSTEP   127 / 208  fSTEP   128 / 208  fSTEP   129 / 208  fSTEP   130 / 208  fSTEP   131 / 208  fSTEP   132 / 208  fSTEP   133 / 208  fSTEP   134 / 208  fSTEP   135 / 208  fSTEP   136 / 208  fSTEP   137 / 208  fSTEP   138 / 208  fSTEP   139 / 208  fSTEP   140 / 208  fSTEP   141 / 208  fSTEP   142 / 208  fSTEP   143 / 208  fSTEP   144 / 208  fSTEP   145 / 208  fSTEP   146 / 208  fSTEP   147 / 208  fSTEP   148 / 208  fSTEP   149 / 208  fSTEP   150 / 208  fSTEP   151 / 208  fSTEP   152 / 208  fSTEP   153 / 208  fSTEP   154 / 208  fSTEP   155 / 208  fSTEP   156 / 208  fSTEP   157 / 208  fSTEP   158 / 208  fSTEP   159 / 208  fSTEP   160 / 208  fSTEP   161 / 208  fSTEP   162 / 208  fSTEP   163 / 208  fSTEP   164 / 208  fSTEP   165 / 208  fSTEP   166 / 208  fSTEP   167 / 208  fSTEP   168 / 208  fSTEP   169 / 208  fSTEP   170 / 208  fSTEP   171 / 208  fSTEP   172 / 208  fSTEP   173 / 208  fSTEP   174 / 208  fSTEP   175 / 208  fSTEP   176 / 208  fSTEP   177 / 208  fSTEP   178 / 208  fSTEP   179 / 208  fSTEP   180 / 208  fSTEP   181 / 208  fSTEP   182 / 208  f
+Reallocating..done. *alloclen = 2497
+STEP   183 / 208  fSTEP   184 / 208  fSTEP   185 / 208  fSTEP   186 / 208  fSTEP   187 / 208  fSTEP   188 / 208  fSTEP   189 / 208  fSTEP   190 / 208  fSTEP   191 / 208  fSTEP   192 / 208  fSTEP   193 / 208  fSTEP   194 / 208  fSTEP   195 / 208  fSTEP   196 / 208  fSTEP   197 / 208  fSTEP   198 / 208  fSTEP   199 / 208  fSTEP   200 / 208  fSTEP   201 / 208  fSTEP   202 / 208  fSTEP   203 / 208  fSTEP   204 / 208  fSTEP   205 / 208  fSTEP   206 / 208  fSTEP   207 / 208  fSTEP   208 / 208  d
+done.
+
+Making a distance matrix from msa.. 
+    0 / 209  100 / 209  200 / 209
+done.
+
+Constructing a UPGMA tree (efffree=1) ... 
+    0 / 209   10 / 209   20 / 209   30 / 209   40 / 209   50 / 209   60 / 209   70 / 209   80 / 209   90 / 209  100 / 209  110 / 209  120 / 209  130 / 209  140 / 209  150 / 209  160 / 209  170 / 209  180 / 209  190 / 209  200 / 209
+done.
+
+Progressive alignment 2/2... 
+STEP     1 / 208  fSTEP     2 / 208  fSTEP     3 / 208  fSTEP     4 / 208  fSTEP     5 / 208  fSTEP     6 / 208  fSTEP     7 / 208  fSTEP     8 / 208  fSTEP     9 / 208  fSTEP    10 / 208  fSTEP    11 / 208  fSTEP    12 / 208  fSTEP    13 / 208  fSTEP    14 / 208  fSTEP    15 / 208  fSTEP    16 / 208  fSTEP    17 / 208  fSTEP    18 / 208  fSTEP    19 / 208  fSTEP    20 / 208  fSTEP    21 / 208  fSTEP    22 / 208  fSTEP    23 / 208  fSTEP    24 / 208  fSTEP    25 / 208  fSTEP    26 / 208  fSTEP    27 / 208  fSTEP    28 / 208  fSTEP    29 / 208  fSTEP    30 / 208  fSTEP    31 / 208  fSTEP    32 / 208  fSTEP    33 / 208  fSTEP    34 / 208  fSTEP    35 / 208  fSTEP    36 / 208  fSTEP    37 / 208  fSTEP    38 / 208  fSTEP    39 / 208  fSTEP    40 / 208  fSTEP    41 / 208  fSTEP    42 / 208  fSTEP    43 / 208  fSTEP    44 / 208  fSTEP    45 / 208  fSTEP    46 / 208  fSTEP    47 / 208  fSTEP    48 / 208  fSTEP    49 / 208  fSTEP    50 / 208  fSTEP    51 / 208  fSTEP    52 / 208  fSTEP    53 / 208  fSTEP    54 / 208  fSTEP    55 / 208  fSTEP    56 / 208  fSTEP    57 / 208  fSTEP    58 / 208  fSTEP    59 / 208  fSTEP    60 / 208  fSTEP    61 / 208  fSTEP    62 / 208  fSTEP    63 / 208  fSTEP    64 / 208  fSTEP    65 / 208  fSTEP    66 / 208  fSTEP    67 / 208  fSTEP    68 / 208  fSTEP    69 / 208  fSTEP    70 / 208  fSTEP    71 / 208  fSTEP    72 / 208  fSTEP    73 / 208  fSTEP    74 / 208  fSTEP    75 / 208  fSTEP    76 / 208  fSTEP    77 / 208  fSTEP    78 / 208  fSTEP    79 / 208  fSTEP    80 / 208  fSTEP    81 / 208  fSTEP    82 / 208  fSTEP    83 / 208  fSTEP    84 / 208  fSTEP    85 / 208  fSTEP    86 / 208  fSTEP    87 / 208  fSTEP    88 / 208  fSTEP    89 / 208  fSTEP    90 / 208  fSTEP    91 / 208  fSTEP    92 / 208  fSTEP    93 / 208  fSTEP    94 / 208  fSTEP    95 / 208  fSTEP    96 / 208  fSTEP    97 / 208  fSTEP    98 / 208  fSTEP    99 / 208  fSTEP   100 / 208  fSTEP   101 / 208  fSTEP   102 / 208  fSTEP   103 / 208  fSTEP   104 / 208  fSTEP   105 / 208  fSTEP   106 / 208  fSTEP   107 / 208  fSTEP   108 / 208  fSTEP   109 / 208  fSTEP   110 / 208  fSTEP   111 / 208  fSTEP   112 / 208  fSTEP   113 / 208  fSTEP   114 / 208  fSTEP   115 / 208  fSTEP   116 / 208  fSTEP   117 / 208  fSTEP   118 / 208  fSTEP   119 / 208  fSTEP   120 / 208  fSTEP   121 / 208  fSTEP   122 / 208  fSTEP   123 / 208  fSTEP   124 / 208  fSTEP   125 / 208  fSTEP   126 / 208  fSTEP   127 / 208  fSTEP   128 / 208  fSTEP   129 / 208  fSTEP   130 / 208  fSTEP   131 / 208  fSTEP   132 / 208  fSTEP   133 / 208  fSTEP   134 / 208  fSTEP   135 / 208  fSTEP   136 / 208  fSTEP   137 / 208  fSTEP   138 / 208  fSTEP   139 / 208  fSTEP   140 / 208  fSTEP   141 / 208  fSTEP   142 / 208  fSTEP   143 / 208  fSTEP   144 / 208  fSTEP   145 / 208  fSTEP   146 / 208  fSTEP   147 / 208  fSTEP   148 / 208  fSTEP   149 / 208  fSTEP   150 / 208  fSTEP   151 / 208  fSTEP   152 / 208  fSTEP   153 / 208  fSTEP   154 / 208  fSTEP   155 / 208  fSTEP   156 / 208  fSTEP   157 / 208  fSTEP   158 / 208  fSTEP   159 / 208  fSTEP   160 / 208  fSTEP   161 / 208  fSTEP   162 / 208  fSTEP   163 / 208  fSTEP   164 / 208  fSTEP   165 / 208  fSTEP   166 / 208  fSTEP   167 / 208  fSTEP   168 / 208  fSTEP   169 / 208  fSTEP   170 / 208  fSTEP   171 / 208  fSTEP   172 / 208  fSTEP   173 / 208  fSTEP   174 / 208  fSTEP   175 / 208  fSTEP   176 / 208  fSTEP   177 / 208  fSTEP   178 / 208  fSTEP   179 / 208  fSTEP   180 / 208  fSTEP   181 / 208  f
+Reallocating..done. *alloclen = 2431
+STEP   182 / 208  fSTEP   183 / 208  fSTEP   184 / 208  fSTEP   185 / 208  fSTEP   186 / 208  fSTEP   187 / 208  fSTEP   188 / 208  fSTEP   189 / 208  fSTEP   190 / 208  fSTEP   191 / 208  fSTEP   192 / 208  fSTEP   193 / 208  fSTEP   194 / 208  fSTEP   195 / 208  fSTEP   196 / 208  fSTEP   197 / 208  fSTEP   198 / 208  fSTEP   199 / 208  fSTEP   200 / 208  fSTEP   201 / 208  fSTEP   202 / 208  fSTEP   203 / 208  fSTEP   204 / 208  fSTEP   205 / 208  fSTEP   206 / 208  fSTEP   207 / 208  fSTEP   208 / 208  d
+done.
+
+disttbfast (nuc) Version 7.505
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+
+Strategy:
+ FFT-NS-2 (Fast but rough)
+ Progressive method (guide trees were built 2 times.)
+
+If unsure which option to use, try 'mafft --auto input > output'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+It tends to insert more gaps into gap-rich regions than previous versions.
+To disable this change, add the --leavegappyregion option.
+
+
+muscle 5.1.linux64 [12f0e2]  528Gb RAM, 64 cores
+Built Jan 13 2022 23:17:13
+(C) Copyright 2004-2021 Robert C. Edgar.
+https://drive5.com
+
+
+WARNING: 2 duplicate labels
+
+Input: 209 seqs, avg length 266, max 711
+
+00:00 6.2Mb  CPU has 64 cores, defaulting to 20 threads
+
+WARNING: Max OMP threads 8
+
+00:00 132Mb   0.0046% Calc posteriors00:01 539Mb     3.1% Calc posteriors 00:02 540Mb     6.0% Calc posteriors00:03 541Mb     9.2% Calc posteriors00:04 543Mb    12.3% Calc posteriors00:05 543Mb    15.5% Calc posteriors00:06 545Mb    18.5% Calc posteriorsfree(): invalid next size (normal)
+/var/spool/slurmd/job3503600/slurm_script: line 32: 4130521 Aborted                 (core dumped) muscle -align Mojave2020.Glomero.fas -output Mojave2020.Glomero.muscle.fasaln
+
+Determining smart-gap threshold...
+
+-------------
+| Arguments |
+-------------
+Input file: Mojave2020.Glomero.fasaln (format: fasta)
+Output file: Mojave2020.Glomero.fasaln.clipkit (format: fasta)
+Gaps threshold: 0.689
+Trimming mode: smart-gap
+Create complementary output: False
+Create log file: False
+
+
+------------------------
+| Processing Alignment |
+------------------------
+
+  0%|          | 0/997 [00:00<?, ?it/s] 41%|████      | 410/997 [00:00<00:00, 4098.52it/s] 82%|████████▏ | 820/997 [00:00<00:00, 3915.19it/s]100%|██████████| 997/997 [00:00<00:00, 3970.08it/s]
+WARNING: header id '_1' contains only gaps
+
+
+------------------------
+| Writing output files |
+------------------------
+trimmed alignment: Mojave2020.Glomero.fasaln.clipkit
+complement file: False
+log file: False
+
+
+---------------------
+| Output Statistics |
+---------------------
+Number of sites kept: 315
+Number of sites trimmed: 682
+
+Percentage of alignment trimmed: 68.405%
+
+Execution time: 0.591s
+
+Traceback (most recent call last):
+  File "/opt/linux/rocky/8.x/x86_64/pkgs/clipkit/1.3.0/bin/clipkit", line 10, in <module>
+    sys.exit(main())
+  File "/bigdata/operations/pkgadmin/opt/linux/centos/8.x/x86_64/pkgs/clipkit/1.3.0/lib/python3.7/site-packages/clipkit/clipkit.py", line 124, in main
+    execute(**process_args(args))
+  File "/bigdata/operations/pkgadmin/opt/linux/centos/8.x/x86_64/pkgs/clipkit/1.3.0/lib/python3.7/site-packages/clipkit/clipkit.py", line 65, in execute
+    input_file, file_format=input_file_format
+  File "/bigdata/operations/pkgadmin/opt/linux/centos/8.x/x86_64/pkgs/clipkit/1.3.0/lib/python3.7/site-packages/clipkit/files.py", line 50, in get_alignment_and_format
+    raise Exception("Input file could not be read")
+Exception: Input file could not be read
+IQ-TREE multicore version 2.2.2.6 COVID-edition for Linux 64-bit built May 27 2023
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    i03 (AVX2, FMA3, 503 GB RAM)
+Command: iqtree2 -nt AUTO -s Mojave2020.Glomero.fasaln.clipkit -alrt 1000 -bb 1000 -m MFP
+Seed:    283139 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Apr 11 12:36:00 2024
+Kernel:  AVX+FMA - auto-detect threads (8 CPU cores detected)
+
+Reading alignment file Mojave2020.Glomero.fasaln.clipkit ... Fasta format detected
+Reading fasta file: done in 0.00118303 secs using 55.79% CPU
+NOTE: Change sequence name 'Glomeraceae Glomus Konig10 group Ab ITS_2' -> Glomeraceae_Glomus_Konig10_group
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA_3' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'Glomeraceae Glomus intraradices ITS_4' -> Glomeraceae_Glomus_intraradices_ITS_4
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS_5' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'Glomeraceae Glomus irregulare ITS_6' -> Glomeraceae_Glomus_irregulare_ITS_6
+NOTE: Change sequence name 'Glomeraceae Glomus sinuosum ITS_7' -> Glomeraceae_Glomus_sinuosum_ITS_7
+NOTE: Change sequence name 'Glomeraceae Glomus sp. ITS_8' -> Glomeraceae_Glomus_sp._ITS_8
+NOTE: Change sequence name 'Glomeraceae Glomus Konig10 Sequence type 3 ITS_9' -> Glomeraceae_Glomus_Konig10_Sequence
+NOTE: Change sequence name 'Glomeraceae Rhizophagus arabicus 18S rDNA+ITS+28S rDNA_10' -> Glomeraceae_Rhizophagus_arabicus_18S
+NOTE: Change sequence name 'Glomeraceae Glomus Hijri06 Glom-A3 18S rDNA+ITS_11' -> Glomeraceae_Glomus_Hijri06_Glom-A3
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS_12' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'Glomeraceae Glomus Wubet04 Glom17 18S rDNA+ITS+28S rDNA_13' -> Glomeraceae_Glomus_Wubet04_Glom17
+NOTE: Change sequence name 'Glomeraceae Glomus Hijri06 Glom-A1 18S rDNA+ITS_14' -> Glomeraceae_Glomus_Hijri06_Glom-A1
+NOTE: Change sequence name 'Glomeraceae Glomus Wubet04 Glom12 18S rDNA+ITS+28S rDNA_15' -> Glomeraceae_Glomus_Wubet04_Glom12
+NOTE: Change sequence name 'Glomeraceae Glomus custos ITS_16' -> Glomeraceae_Glomus_custos_ITS_16
+NOTE: Change sequence name 'Glomeraceae Glomus intraradices ITS_17' -> Glomeraceae_Glomus_intraradices_ITS_17
+NOTE: Change sequence name 'Glomeraceae Glomus Wang11 Glo1 18S rDNA+ITS+28S rDNA_18' -> Glomeraceae_Glomus_Wang11_Glo1
+NOTE: Change sequence name 'Glomeraceae Glomus cubense ITS_19' -> Glomeraceae_Glomus_cubense_ITS_19
+NOTE: Change sequence name 'Glomeraceae Rhizoglomus dunense 18S rDNA+ITS+28S rDNA_20' -> Glomeraceae_Rhizoglomus_dunense_18S
+NOTE: Change sequence name 'Glomeraceae Glomus sp. ITS_21' -> Glomeraceae_Glomus_sp._ITS_21
+NOTE: Change sequence name 'Glomeraceae Glomus Hijri06 Glom-A3 18S rDNA+ITS_22' -> Glomeraceae_Glomus_Hijri06_Glom-A3
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA_23' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'Diversisporaceae Diversispora sp. W5257 18S rDNA+ITS+28S rDNA_24' -> Diversisporaceae_Diversispora_sp._W5257
+NOTE: Change sequence name 'Glomeraceae Glomus sp. ITS_25' -> Glomeraceae_Glomus_sp._ITS_25
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA_26' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'Glomeraceae Glomus OTU60 18S rDNA+ITS+28S rDNA_27' -> Glomeraceae_Glomus_OTU60_18S
+NOTE: Change sequence name 'Glomeraceae Glomus sp. ITS_28' -> Glomeraceae_Glomus_sp._ITS_28
+NOTE: Change sequence name 'Glomeraceae Glomus sp. ITS_29' -> Glomeraceae_Glomus_sp._ITS_29
+NOTE: Change sequence name 'Glomeraceae Glomus intraradices 18S rDNA+ITS+28S rDNA_30' -> Glomeraceae_Glomus_intraradices_18S
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA_31' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'Glomeraceae Glomus proliferum ITS_32' -> Glomeraceae_Glomus_proliferum_ITS_32
+NOTE: Change sequence name 'Glomeraceae Glomus Wang11 Glo7 18S rDNA+ITS+28S rDNA_33' -> Glomeraceae_Glomus_Wang11_Glo7
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS_34' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'Glomeraceae Glomus sp. ITS_35' -> Glomeraceae_Glomus_sp._ITS_35
+NOTE: Change sequence name 'Glomeraceae Glomus BV-RED-5 18S rDNA+ITS+28S rDNA_36' -> Glomeraceae_Glomus_BV-RED-5_18S
+NOTE: Change sequence name 'Glomeraceae Glomus proliferum ITS_37' -> Glomeraceae_Glomus_proliferum_ITS_37
+NOTE: Change sequence name 'Glomeraceae Glomus Galvan09 GloA3 18S rDNA+ITS_38' -> Glomeraceae_Glomus_Galvan09_GloA3
+NOTE: Change sequence name 'Glomeraceae Glomus OTU29 18S rDNA+ITS+28S rDNA_39' -> Glomeraceae_Glomus_OTU29_18S
+NOTE: Change sequence name 'Glomeraceae Glomus intraradices ITS_40' -> Glomeraceae_Glomus_intraradices_ITS_40
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA_41' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS_42' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'Glomeraceae Glomus Wang11 Glo22 18S rDNA+ITS+28S rDNA_43' -> Glomeraceae_Glomus_Wang11_Glo22
+NOTE: Change sequence name 'Glomeraceae Glomus Konig10 Sequence type 1 ITS_44' -> Glomeraceae_Glomus_Konig10_Sequence
+NOTE: Change sequence name 'Glomeraceae Glomus sp. 18S rDNA+ITS_45' -> Glomeraceae_Glomus_sp._18S
+NOTE: Change sequence name 'Glomeraceae Glomus Fahey12 S6 18S rDNA+ITS+28S rDNA_46' -> Glomeraceae_Glomus_Fahey12_S6
+NOTE: Change sequence name 'Mortierella globalpina CBS 360.70 ITS region; from TYPE material' -> Mortierella_globalpina_CBS_360.70
+NOTE: Change sequence name 'Septoglomus mediterraneum VAL Myco1626 ITS region; from TYPE material' -> Septoglomus_mediterraneum_VAL_Myco1626
+NOTE: Change sequence name 'Funneliformis pilosus VAL Myco1629 ITS region; from TYPE material' -> Funneliformis_pilosus_VAL_Myco1629
+NOTE: Change sequence name 'Gigaspora polymorphira HMAS 255790 ITS region; from TYPE material' -> Gigaspora_polymorphira_HMAS_255790
+NOTE: Change sequence name 'Racocetra crispa URM 88221 ITS region; from TYPE material' -> Racocetra_crispa_URM_88221
+NOTE: Change sequence name 'Archaeospora ecuadoriana E W5337 ITS region; from TYPE material' -> Archaeospora_ecuadoriana_E_W5337
+NOTE: Change sequence name 'Dentiscutata savannicola E W5538 ITS region; from TYPE material' -> Dentiscutata_savannicola_E_W5538
+NOTE: Change sequence name 'Redeckera megalocarpum LIP CL/Guad05-051 ITS region; from TYPE material' -> Redeckera_megalocarpum_LIP_CL/Guad05-051
+NOTE: Change sequence name 'Glomus macrocarpum E W5581 ITS region; from TYPE material' -> Glomus_macrocarpum_E_W5581
+NOTE: Change sequence name 'Acaulospora entreriana E W5476 ITS region; from TYPE material' -> Acaulospora_entreriana_E_W5476
+NOTE: Change sequence name 'Acaulospora spinosa E W3574 ITS region; from TYPE material' -> Acaulospora_spinosa_E_W3574
+NOTE: Change sequence name 'Acaulospora colombiana E W5795 ITS region; from TYPE material' -> Acaulospora_colombiana_E_W5795
+NOTE: Change sequence name 'Diversispora spurca E W4119 ITS region; from TYPE material' -> Diversispora_spurca_E_W4119
+NOTE: Change sequence name 'Acaulospora laevis BEG 13 ITS region; from TYPE material' -> Acaulospora_laevis_BEG_13
+NOTE: Change sequence name 'Rhizophagus proliferus MUCL 41827 ITS region; from TYPE material' -> Rhizophagus_proliferus_MUCL_41827
+NOTE: Change sequence name 'Funneliformis mosseae BEG 12 ITS region; from TYPE material' -> Funneliformis_mosseae_BEG_12
+NOTE: Change sequence name 'Cetraspora nodosa BEG 4 ITS region; from TYPE material' -> Cetraspora_nodosa_BEG_4
+NOTE: Change sequence name 'Acaulospora cavernata BEG 33 ITS region; from TYPE material' -> Acaulospora_cavernata_BEG_33
+NOTE: Change sequence name 'Diversispora aurantia J Blaszkowski 2444 ITS region; from TYPE material' -> Diversispora_aurantia_J_Blaszkowski
+NOTE: Change sequence name 'Paraglomus occultum INVAM IA702 ITS region; from reference material' -> Paraglomus_occultum_INVAM_IA702
+NOTE: Change sequence name 'Racocetra castanea BEG 1 ITS region; from TYPE material' -> Racocetra_castanea_BEG_1
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.00127697 secs using 338.1% CPU
+Alignment has 207 sequences with 315 columns, 245 distinct patterns
+170 parsimony-informative, 52 singleton sites, 93 constant sites
+ERROR: Duplicated sequence name Glomeraceae_Glomus_Hijri06_Glom-A3
+ERROR: Duplicated sequence name Glomeraceae_Glomus_Konig10_Sequence
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._18S
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._18S
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._18S
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._18S
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._18S
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._18S
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._18S
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._18S
+ERROR: Duplicated sequence name Glomeraceae_Glomus_sp._18S
+ERROR: Please rename sequences listed above!
+IQ-TREE multicore version 2.2.2.6 COVID-edition for Linux 64-bit built May 27 2023
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    i03 (AVX2, FMA3, 503 GB RAM)
+Command: iqtree2 -nt AUTO -s Mojave2020.Glomero.muscle.fasaln.clipkit -alrt 1000 -bb 1000 -m MFP
+Seed:    299431 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Apr 11 12:36:00 2024
+Kernel:  AVX+FMA - auto-detect threads (8 CPU cores detected)
+
+Reading alignment file Mojave2020.Glomero.muscle.fasaln.clipkit ... ERROR: File not found Mojave2020.Glomero.muscle.fasaln.clipkit

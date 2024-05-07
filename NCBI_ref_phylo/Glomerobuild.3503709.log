@@ -1,0 +1,434 @@
+Loading [1msamtools/1.19.2[22m
+  [94mLoading requirement[0m: libdeflate/1.17 htslib/1.19.1
+[W::fai_get_val] Reference blast_filter$V2 not found in FASTA file, returning empty sequence
+[W::fai_get_val] Reference blast_filter$V2 not found in FASTA file, returning empty sequence
+[faidx] Failed to fetch sequence in blast_filter$V2
+nthread = 0
+nthreadpair = 0
+nthreadtb = 0
+ppenalty_ex = 0
+stacksize: 8192 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+Gap Penalty = -1.53, +0.00, +0.00
+
+
+
+Making a distance matrix ..
+
+There are 1 ambiguous characters.
+    1 / 209  101 / 209  201 / 209
+done.
+
+Constructing a UPGMA tree (efffree=0) ... 
+    0 / 209   10 / 209   20 / 209   30 / 209   40 / 209   50 / 209   60 / 209   70 / 209   80 / 209   90 / 209  100 / 209  110 / 209  120 / 209  130 / 209  140 / 209  150 / 209  160 / 209  170 / 209  180 / 209  190 / 209  200 / 209
+done.
+
+Progressive alignment 1/2... 
+STEP     1 / 208  fSTEP     2 / 208  fSTEP     3 / 208  fSTEP     4 / 208  fSTEP     5 / 208  fSTEP     6 / 208  fSTEP     7 / 208  fSTEP     8 / 208  fSTEP     9 / 208  fSTEP    10 / 208  fSTEP    11 / 208  fSTEP    12 / 208  fSTEP    13 / 208  fSTEP    14 / 208  fSTEP    15 / 208  fSTEP    16 / 208  fSTEP    17 / 208  fSTEP    18 / 208  fSTEP    19 / 208  fSTEP    20 / 208  fSTEP    21 / 208  fSTEP    22 / 208  fSTEP    23 / 208  fSTEP    24 / 208  fSTEP    25 / 208  fSTEP    26 / 208  fSTEP    27 / 208  fSTEP    28 / 208  fSTEP    29 / 208  fSTEP    30 / 208  fSTEP    31 / 208  fSTEP    32 / 208  fSTEP    33 / 208  fSTEP    34 / 208  fSTEP    35 / 208  fSTEP    36 / 208  fSTEP    37 / 208  fSTEP    38 / 208  fSTEP    39 / 208  fSTEP    40 / 208  fSTEP    41 / 208  fSTEP    42 / 208  fSTEP    43 / 208  fSTEP    44 / 208  fSTEP    45 / 208  fSTEP    46 / 208  fSTEP    47 / 208  fSTEP    48 / 208  fSTEP    49 / 208  fSTEP    50 / 208  fSTEP    51 / 208  fSTEP    52 / 208  fSTEP    53 / 208  fSTEP    54 / 208  fSTEP    55 / 208  fSTEP    56 / 208  fSTEP    57 / 208  fSTEP    58 / 208  fSTEP    59 / 208  fSTEP    60 / 208  fSTEP    61 / 208  fSTEP    62 / 208  fSTEP    63 / 208  fSTEP    64 / 208  fSTEP    65 / 208  fSTEP    66 / 208  fSTEP    67 / 208  fSTEP    68 / 208  fSTEP    69 / 208  fSTEP    70 / 208  fSTEP    71 / 208  fSTEP    72 / 208  fSTEP    73 / 208  fSTEP    74 / 208  fSTEP    75 / 208  fSTEP    76 / 208  fSTEP    77 / 208  fSTEP    78 / 208  fSTEP    79 / 208  fSTEP    80 / 208  fSTEP    81 / 208  fSTEP    82 / 208  fSTEP    83 / 208  fSTEP    84 / 208  fSTEP    85 / 208  fSTEP    86 / 208  fSTEP    87 / 208  fSTEP    88 / 208  fSTEP    89 / 208  fSTEP    90 / 208  fSTEP    91 / 208  fSTEP    92 / 208  fSTEP    93 / 208  fSTEP    94 / 208  fSTEP    95 / 208  fSTEP    96 / 208  fSTEP    97 / 208  fSTEP    98 / 208  fSTEP    99 / 208  fSTEP   100 / 208  fSTEP   101 / 208  fSTEP   102 / 208  fSTEP   103 / 208  fSTEP   104 / 208  fSTEP   105 / 208  fSTEP   106 / 208  fSTEP   107 / 208  fSTEP   108 / 208  fSTEP   109 / 208  fSTEP   110 / 208  fSTEP   111 / 208  fSTEP   112 / 208  fSTEP   113 / 208  fSTEP   114 / 208  fSTEP   115 / 208  fSTEP   116 / 208  fSTEP   117 / 208  fSTEP   118 / 208  fSTEP   119 / 208  fSTEP   120 / 208  fSTEP   121 / 208  fSTEP   122 / 208  fSTEP   123 / 208  fSTEP   124 / 208  fSTEP   125 / 208  fSTEP   126 / 208  fSTEP   127 / 208  fSTEP   128 / 208  fSTEP   129 / 208  fSTEP   130 / 208  fSTEP   131 / 208  fSTEP   132 / 208  fSTEP   133 / 208  fSTEP   134 / 208  fSTEP   135 / 208  fSTEP   136 / 208  fSTEP   137 / 208  fSTEP   138 / 208  fSTEP   139 / 208  fSTEP   140 / 208  fSTEP   141 / 208  fSTEP   142 / 208  fSTEP   143 / 208  fSTEP   144 / 208  fSTEP   145 / 208  fSTEP   146 / 208  fSTEP   147 / 208  fSTEP   148 / 208  fSTEP   149 / 208  fSTEP   150 / 208  fSTEP   151 / 208  fSTEP   152 / 208  fSTEP   153 / 208  fSTEP   154 / 208  fSTEP   155 / 208  fSTEP   156 / 208  fSTEP   157 / 208  fSTEP   158 / 208  fSTEP   159 / 208  fSTEP   160 / 208  fSTEP   161 / 208  fSTEP   162 / 208  fSTEP   163 / 208  fSTEP   164 / 208  fSTEP   165 / 208  fSTEP   166 / 208  fSTEP   167 / 208  fSTEP   168 / 208  fSTEP   169 / 208  fSTEP   170 / 208  fSTEP   171 / 208  fSTEP   172 / 208  fSTEP   173 / 208  fSTEP   174 / 208  fSTEP   175 / 208  fSTEP   176 / 208  fSTEP   177 / 208  fSTEP   178 / 208  fSTEP   179 / 208  fSTEP   180 / 208  fSTEP   181 / 208  fSTEP   182 / 208  f
+Reallocating..done. *alloclen = 2497
+STEP   183 / 208  fSTEP   184 / 208  fSTEP   185 / 208  fSTEP   186 / 208  fSTEP   187 / 208  fSTEP   188 / 208  fSTEP   189 / 208  fSTEP   190 / 208  fSTEP   191 / 208  fSTEP   192 / 208  fSTEP   193 / 208  fSTEP   194 / 208  fSTEP   195 / 208  fSTEP   196 / 208  fSTEP   197 / 208  fSTEP   198 / 208  fSTEP   199 / 208  fSTEP   200 / 208  fSTEP   201 / 208  fSTEP   202 / 208  fSTEP   203 / 208  fSTEP   204 / 208  fSTEP   205 / 208  fSTEP   206 / 208  fSTEP   207 / 208  fSTEP   208 / 208  d
+done.
+
+Making a distance matrix from msa.. 
+    0 / 209  100 / 209  200 / 209
+done.
+
+Constructing a UPGMA tree (efffree=1) ... 
+    0 / 209   10 / 209   20 / 209   30 / 209   40 / 209   50 / 209   60 / 209   70 / 209   80 / 209   90 / 209  100 / 209  110 / 209  120 / 209  130 / 209  140 / 209  150 / 209  160 / 209  170 / 209  180 / 209  190 / 209  200 / 209
+done.
+
+Progressive alignment 2/2... 
+STEP     1 / 208  fSTEP     2 / 208  fSTEP     3 / 208  fSTEP     4 / 208  fSTEP     5 / 208  fSTEP     6 / 208  fSTEP     7 / 208  fSTEP     8 / 208  fSTEP     9 / 208  fSTEP    10 / 208  fSTEP    11 / 208  fSTEP    12 / 208  fSTEP    13 / 208  fSTEP    14 / 208  fSTEP    15 / 208  fSTEP    16 / 208  fSTEP    17 / 208  fSTEP    18 / 208  fSTEP    19 / 208  fSTEP    20 / 208  fSTEP    21 / 208  fSTEP    22 / 208  fSTEP    23 / 208  fSTEP    24 / 208  fSTEP    25 / 208  fSTEP    26 / 208  fSTEP    27 / 208  fSTEP    28 / 208  fSTEP    29 / 208  fSTEP    30 / 208  fSTEP    31 / 208  fSTEP    32 / 208  fSTEP    33 / 208  fSTEP    34 / 208  fSTEP    35 / 208  fSTEP    36 / 208  fSTEP    37 / 208  fSTEP    38 / 208  fSTEP    39 / 208  fSTEP    40 / 208  fSTEP    41 / 208  fSTEP    42 / 208  fSTEP    43 / 208  fSTEP    44 / 208  fSTEP    45 / 208  fSTEP    46 / 208  fSTEP    47 / 208  fSTEP    48 / 208  fSTEP    49 / 208  fSTEP    50 / 208  fSTEP    51 / 208  fSTEP    52 / 208  fSTEP    53 / 208  fSTEP    54 / 208  fSTEP    55 / 208  fSTEP    56 / 208  fSTEP    57 / 208  fSTEP    58 / 208  fSTEP    59 / 208  fSTEP    60 / 208  fSTEP    61 / 208  fSTEP    62 / 208  fSTEP    63 / 208  fSTEP    64 / 208  fSTEP    65 / 208  fSTEP    66 / 208  fSTEP    67 / 208  fSTEP    68 / 208  fSTEP    69 / 208  fSTEP    70 / 208  fSTEP    71 / 208  fSTEP    72 / 208  fSTEP    73 / 208  fSTEP    74 / 208  fSTEP    75 / 208  fSTEP    76 / 208  fSTEP    77 / 208  fSTEP    78 / 208  fSTEP    79 / 208  fSTEP    80 / 208  fSTEP    81 / 208  fSTEP    82 / 208  fSTEP    83 / 208  fSTEP    84 / 208  fSTEP    85 / 208  fSTEP    86 / 208  fSTEP    87 / 208  fSTEP    88 / 208  fSTEP    89 / 208  fSTEP    90 / 208  fSTEP    91 / 208  fSTEP    92 / 208  fSTEP    93 / 208  fSTEP    94 / 208  fSTEP    95 / 208  fSTEP    96 / 208  fSTEP    97 / 208  fSTEP    98 / 208  fSTEP    99 / 208  fSTEP   100 / 208  fSTEP   101 / 208  fSTEP   102 / 208  fSTEP   103 / 208  fSTEP   104 / 208  fSTEP   105 / 208  fSTEP   106 / 208  fSTEP   107 / 208  fSTEP   108 / 208  fSTEP   109 / 208  fSTEP   110 / 208  fSTEP   111 / 208  fSTEP   112 / 208  fSTEP   113 / 208  fSTEP   114 / 208  fSTEP   115 / 208  fSTEP   116 / 208  fSTEP   117 / 208  fSTEP   118 / 208  fSTEP   119 / 208  fSTEP   120 / 208  fSTEP   121 / 208  fSTEP   122 / 208  fSTEP   123 / 208  fSTEP   124 / 208  fSTEP   125 / 208  fSTEP   126 / 208  fSTEP   127 / 208  fSTEP   128 / 208  fSTEP   129 / 208  fSTEP   130 / 208  fSTEP   131 / 208  fSTEP   132 / 208  fSTEP   133 / 208  fSTEP   134 / 208  fSTEP   135 / 208  fSTEP   136 / 208  fSTEP   137 / 208  fSTEP   138 / 208  fSTEP   139 / 208  fSTEP   140 / 208  fSTEP   141 / 208  fSTEP   142 / 208  fSTEP   143 / 208  fSTEP   144 / 208  fSTEP   145 / 208  fSTEP   146 / 208  fSTEP   147 / 208  fSTEP   148 / 208  fSTEP   149 / 208  fSTEP   150 / 208  fSTEP   151 / 208  fSTEP   152 / 208  fSTEP   153 / 208  fSTEP   154 / 208  fSTEP   155 / 208  fSTEP   156 / 208  fSTEP   157 / 208  fSTEP   158 / 208  fSTEP   159 / 208  fSTEP   160 / 208  fSTEP   161 / 208  fSTEP   162 / 208  fSTEP   163 / 208  fSTEP   164 / 208  fSTEP   165 / 208  fSTEP   166 / 208  fSTEP   167 / 208  fSTEP   168 / 208  fSTEP   169 / 208  fSTEP   170 / 208  fSTEP   171 / 208  fSTEP   172 / 208  fSTEP   173 / 208  fSTEP   174 / 208  fSTEP   175 / 208  fSTEP   176 / 208  fSTEP   177 / 208  fSTEP   178 / 208  fSTEP   179 / 208  fSTEP   180 / 208  fSTEP   181 / 208  f
+Reallocating..done. *alloclen = 2431
+STEP   182 / 208  fSTEP   183 / 208  fSTEP   184 / 208  fSTEP   185 / 208  fSTEP   186 / 208  fSTEP   187 / 208  fSTEP   188 / 208  fSTEP   189 / 208  fSTEP   190 / 208  fSTEP   191 / 208  fSTEP   192 / 208  fSTEP   193 / 208  fSTEP   194 / 208  fSTEP   195 / 208  fSTEP   196 / 208  fSTEP   197 / 208  fSTEP   198 / 208  fSTEP   199 / 208  fSTEP   200 / 208  fSTEP   201 / 208  fSTEP   202 / 208  fSTEP   203 / 208  fSTEP   204 / 208  fSTEP   205 / 208  fSTEP   206 / 208  fSTEP   207 / 208  fSTEP   208 / 208  d
+done.
+
+disttbfast (nuc) Version 7.505
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+
+Strategy:
+ FFT-NS-2 (Fast but rough)
+ Progressive method (guide trees were built 2 times.)
+
+If unsure which option to use, try 'mafft --auto input > output'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+It tends to insert more gaps into gap-rich regions than previous versions.
+To disable this change, add the --leavegappyregion option.
+
+
+muscle 5.1.linux64 [12f0e2]  528Gb RAM, 64 cores
+Built Jan 13 2022 23:17:13
+(C) Copyright 2004-2021 Robert C. Edgar.
+https://drive5.com
+
+
+WARNING: 2 duplicate labels
+
+Input: 209 seqs, avg length 266, max 711
+
+00:00 6.2Mb  CPU has 64 cores, defaulting to 20 threads
+
+WARNING: Max OMP threads 8
+
+00:00 132Mb   0.0046% Calc posteriors00:01 536Mb     1.6% Calc posteriors 00:02 540Mb     4.6% Calc posteriors00:03 540Mb     8.1% Calc posteriors00:04 543Mb    10.8% Calc posteriors00:05 543Mb    14.2% Calc posteriors00:06 545Mb    17.0% Calc posteriors00:07 545Mb    20.5% Calc posteriorsfree(): invalid next size (normal)
+/var/spool/slurmd/job3503709/slurm_script: line 32: 4132282 Aborted                 (core dumped) muscle -align Mojave2020.Glomero.fas -output Mojave2020.Glomero.muscle.fasaln
+
+Determining smart-gap threshold...
+
+-------------
+| Arguments |
+-------------
+Input file: Mojave2020.Glomero.fasaln (format: fasta)
+Output file: Mojave2020.Glomero.fasaln.clipkit (format: fasta)
+Gaps threshold: 0.689
+Trimming mode: smart-gap
+Create complementary output: False
+Create log file: False
+
+
+------------------------
+| Processing Alignment |
+------------------------
+
+  0%|          | 0/997 [00:00<?, ?it/s] 42%|████▏     | 415/997 [00:00<00:00, 4141.44it/s] 83%|████████▎ | 830/997 [00:00<00:00, 4128.25it/s]100%|██████████| 997/997 [00:00<00:00, 4136.17it/s]
+WARNING: header id '1' contains only gaps
+
+
+------------------------
+| Writing output files |
+------------------------
+trimmed alignment: Mojave2020.Glomero.fasaln.clipkit
+complement file: False
+log file: False
+
+
+---------------------
+| Output Statistics |
+---------------------
+Number of sites kept: 315
+Number of sites trimmed: 682
+
+Percentage of alignment trimmed: 68.405%
+
+Execution time: 0.597s
+
+Traceback (most recent call last):
+  File "/opt/linux/rocky/8.x/x86_64/pkgs/clipkit/1.3.0/bin/clipkit", line 10, in <module>
+    sys.exit(main())
+  File "/bigdata/operations/pkgadmin/opt/linux/centos/8.x/x86_64/pkgs/clipkit/1.3.0/lib/python3.7/site-packages/clipkit/clipkit.py", line 124, in main
+    execute(**process_args(args))
+  File "/bigdata/operations/pkgadmin/opt/linux/centos/8.x/x86_64/pkgs/clipkit/1.3.0/lib/python3.7/site-packages/clipkit/clipkit.py", line 65, in execute
+    input_file, file_format=input_file_format
+  File "/bigdata/operations/pkgadmin/opt/linux/centos/8.x/x86_64/pkgs/clipkit/1.3.0/lib/python3.7/site-packages/clipkit/files.py", line 50, in get_alignment_and_format
+    raise Exception("Input file could not be read")
+Exception: Input file could not be read
+IQ-TREE multicore version 2.2.2.6 COVID-edition for Linux 64-bit built May 27 2023
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    i03 (AVX2, FMA3, 503 GB RAM)
+Command: iqtree2 -nt AUTO -s Mojave2020.Glomero.fasaln.clipkit -alrt 1000 -bb 1000 -m MFP
+Seed:    715859 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Apr 11 12:40:34 2024
+Kernel:  AVX+FMA - auto-detect threads (8 CPU cores detected)
+
+Reading alignment file Mojave2020.Glomero.fasaln.clipkit ... Fasta format detected
+Reading fasta file: done in 0.001194 secs using 84% CPU
+NOTE: Change sequence name '2 Glomeraceae Glomus Konig10 group Ab ITS' -> 2_Glomeraceae
+NOTE: Change sequence name '3 Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA' -> 3_Glomeraceae
+NOTE: Change sequence name '4 Glomeraceae Glomus intraradices ITS' -> 4_Glomeraceae
+NOTE: Change sequence name '5 Glomeraceae Glomus sp. 18S rDNA+ITS' -> 5_Glomeraceae
+NOTE: Change sequence name '6 Glomeraceae Glomus irregulare ITS' -> 6_Glomeraceae
+NOTE: Change sequence name '7 Glomeraceae Glomus sinuosum ITS' -> 7_Glomeraceae
+NOTE: Change sequence name '8 Glomeraceae Glomus sp. ITS' -> 8_Glomeraceae
+NOTE: Change sequence name '9 Glomeraceae Glomus Konig10 Sequence type 3 ITS' -> 9_Glomeraceae
+NOTE: Change sequence name '10 Glomeraceae Rhizophagus arabicus 18S rDNA+ITS+28S rDNA' -> 10_Glomeraceae
+NOTE: Change sequence name '11 Glomeraceae Glomus Hijri06 Glom-A3 18S rDNA+ITS' -> 11_Glomeraceae
+NOTE: Change sequence name '12 Glomeraceae Glomus sp. 18S rDNA+ITS' -> 12_Glomeraceae
+NOTE: Change sequence name '13 Glomeraceae Glomus Wubet04 Glom17 18S rDNA+ITS+28S rDNA' -> 13_Glomeraceae
+NOTE: Change sequence name '14 Glomeraceae Glomus Hijri06 Glom-A1 18S rDNA+ITS' -> 14_Glomeraceae
+NOTE: Change sequence name '15 Glomeraceae Glomus Wubet04 Glom12 18S rDNA+ITS+28S rDNA' -> 15_Glomeraceae
+NOTE: Change sequence name '16 Glomeraceae Glomus custos ITS' -> 16_Glomeraceae
+NOTE: Change sequence name '17 Glomeraceae Glomus intraradices ITS' -> 17_Glomeraceae
+NOTE: Change sequence name '18 Glomeraceae Glomus Wang11 Glo1 18S rDNA+ITS+28S rDNA' -> 18_Glomeraceae
+NOTE: Change sequence name '19 Glomeraceae Glomus cubense ITS' -> 19_Glomeraceae
+NOTE: Change sequence name '20 Glomeraceae Rhizoglomus dunense 18S rDNA+ITS+28S rDNA' -> 20_Glomeraceae
+NOTE: Change sequence name '21 Glomeraceae Glomus sp. ITS' -> 21_Glomeraceae
+NOTE: Change sequence name '22 Glomeraceae Glomus Hijri06 Glom-A3 18S rDNA+ITS' -> 22_Glomeraceae
+NOTE: Change sequence name '23 Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA' -> 23_Glomeraceae
+NOTE: Change sequence name '24 Diversisporaceae Diversispora sp. W5257 18S rDNA+ITS+28S rDNA' -> 24_Diversisporaceae
+NOTE: Change sequence name '25 Glomeraceae Glomus sp. ITS' -> 25_Glomeraceae
+NOTE: Change sequence name '26 Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA' -> 26_Glomeraceae
+NOTE: Change sequence name '27 Glomeraceae Glomus OTU60 18S rDNA+ITS+28S rDNA' -> 27_Glomeraceae
+NOTE: Change sequence name '28 Glomeraceae Glomus sp. ITS' -> 28_Glomeraceae
+NOTE: Change sequence name '29 Glomeraceae Glomus sp. ITS' -> 29_Glomeraceae
+NOTE: Change sequence name '30 Glomeraceae Glomus intraradices 18S rDNA+ITS+28S rDNA' -> 30_Glomeraceae
+NOTE: Change sequence name '31 Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA' -> 31_Glomeraceae
+NOTE: Change sequence name '32 Glomeraceae Glomus proliferum ITS' -> 32_Glomeraceae
+NOTE: Change sequence name '33 Glomeraceae Glomus Wang11 Glo7 18S rDNA+ITS+28S rDNA' -> 33_Glomeraceae
+NOTE: Change sequence name '34 Glomeraceae Glomus sp. 18S rDNA+ITS' -> 34_Glomeraceae
+NOTE: Change sequence name '35 Glomeraceae Glomus sp. ITS' -> 35_Glomeraceae
+NOTE: Change sequence name '36 Glomeraceae Glomus BV-RED-5 18S rDNA+ITS+28S rDNA' -> 36_Glomeraceae
+NOTE: Change sequence name '37 Glomeraceae Glomus proliferum ITS' -> 37_Glomeraceae
+NOTE: Change sequence name '38 Glomeraceae Glomus Galvan09 GloA3 18S rDNA+ITS' -> 38_Glomeraceae
+NOTE: Change sequence name '39 Glomeraceae Glomus OTU29 18S rDNA+ITS+28S rDNA' -> 39_Glomeraceae
+NOTE: Change sequence name '40 Glomeraceae Glomus intraradices ITS' -> 40_Glomeraceae
+NOTE: Change sequence name '41 Glomeraceae Glomus sp. 18S rDNA+ITS+28S rDNA' -> 41_Glomeraceae
+NOTE: Change sequence name '42 Glomeraceae Glomus sp. 18S rDNA+ITS' -> 42_Glomeraceae
+NOTE: Change sequence name '43 Glomeraceae Glomus Wang11 Glo22 18S rDNA+ITS+28S rDNA' -> 43_Glomeraceae
+NOTE: Change sequence name '44 Glomeraceae Glomus Konig10 Sequence type 1 ITS' -> 44_Glomeraceae
+NOTE: Change sequence name '45 Glomeraceae Glomus sp. 18S rDNA+ITS' -> 45_Glomeraceae
+NOTE: Change sequence name '46 Glomeraceae Glomus Fahey12 S6 18S rDNA+ITS+28S rDNA' -> 46_Glomeraceae
+NOTE: Change sequence name 'Mortierella globalpina CBS 360.70 ITS region; from TYPE material' -> Mortierella_globalpina
+NOTE: Change sequence name 'Septoglomus mediterraneum VAL Myco1626 ITS region; from TYPE material' -> Septoglomus_mediterraneum
+NOTE: Change sequence name 'Funneliformis pilosus VAL Myco1629 ITS region; from TYPE material' -> Funneliformis_pilosus
+NOTE: Change sequence name 'Gigaspora polymorphira HMAS 255790 ITS region; from TYPE material' -> Gigaspora_polymorphira
+NOTE: Change sequence name 'Racocetra crispa URM 88221 ITS region; from TYPE material' -> Racocetra_crispa
+NOTE: Change sequence name 'Archaeospora ecuadoriana E W5337 ITS region; from TYPE material' -> Archaeospora_ecuadoriana
+NOTE: Change sequence name 'Dentiscutata savannicola E W5538 ITS region; from TYPE material' -> Dentiscutata_savannicola
+NOTE: Change sequence name 'Redeckera megalocarpum LIP CL/Guad05-051 ITS region; from TYPE material' -> Redeckera_megalocarpum
+NOTE: Change sequence name 'Glomus macrocarpum E W5581 ITS region; from TYPE material' -> Glomus_macrocarpum
+NOTE: Change sequence name 'Acaulospora entreriana E W5476 ITS region; from TYPE material' -> Acaulospora_entreriana
+NOTE: Change sequence name 'Acaulospora spinosa E W3574 ITS region; from TYPE material' -> Acaulospora_spinosa
+NOTE: Change sequence name 'Acaulospora colombiana E W5795 ITS region; from TYPE material' -> Acaulospora_colombiana
+NOTE: Change sequence name 'Diversispora spurca E W4119 ITS region; from TYPE material' -> Diversispora_spurca
+NOTE: Change sequence name 'Acaulospora laevis BEG 13 ITS region; from TYPE material' -> Acaulospora_laevis
+NOTE: Change sequence name 'Rhizophagus proliferus MUCL 41827 ITS region; from TYPE material' -> Rhizophagus_proliferus
+NOTE: Change sequence name 'Funneliformis mosseae BEG 12 ITS region; from TYPE material' -> Funneliformis_mosseae
+NOTE: Change sequence name 'Cetraspora nodosa BEG 4 ITS region; from TYPE material' -> Cetraspora_nodosa
+NOTE: Change sequence name 'Acaulospora cavernata BEG 33 ITS region; from TYPE material' -> Acaulospora_cavernata
+NOTE: Change sequence name 'Diversispora aurantia J Blaszkowski 2444 ITS region; from TYPE material' -> Diversispora_aurantia
+NOTE: Change sequence name 'Paraglomus occultum INVAM IA702 ITS region; from reference material' -> Paraglomus_occultum
+NOTE: Change sequence name 'Racocetra castanea BEG 1 ITS region; from TYPE material' -> Racocetra_castanea
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.00120187 secs using 467.3% CPU
+Alignment has 207 sequences with 315 columns, 245 distinct patterns
+170 parsimony-informative, 52 singleton sites, 93 constant sites
+                           Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.98295e-05 secs using 276.9% CPU
+   1  ASV980.252                  59.37%    passed     86.01%
+   2  ASV16684.31                 58.41%    passed     74.74%
+   3  ASV19239.37                 59.37%    passed     86.99%
+   4  ASV6864.118                 59.68%    passed     83.81%
+   5  ASV10026.40                 59.37%    passed     85.17%
+   6  ASV3442.247                 61.27%    passed     92.52%
+   7  ASV4176.193                 60.63%    passed     98.59%
+   8  ASV2145.495                 60.95%    passed     90.45%
+   9  ASV23814.19                 59.37%    passed     53.08%
+  10  ASV10459.48                 60.00%    passed     41.78%
+  11  ASV12115.123                59.68%    passed     44.91%
+  12  ASV7970.12                  59.37%    passed     57.53%
+  13  ASV27726.7                  59.37%    passed     44.87%
+  14  ASV4575.23                  59.68%    passed     46.05%
+  15  ASV16329.1                  59.68%    passed     45.67%
+  16  ASV29004.1                  56.51%    passed     51.00%
+  17  ASV25696.0                  55.56%    passed     89.89%
+  18  ASV8509.6                   60.95%    passed     54.32%
+  19  ASV34591.11                 61.59%    passed     65.93%
+  20  ASV13574.2                  61.90%    passed     78.79%
+  21  ASV22170.4                  60.63%    passed     70.42%
+  22  ASV14483.1                  56.51%    passed     53.54%
+  23  ASV14485.3                  56.51%    passed     66.70%
+  24  ASV12791.7                  55.24%    passed     98.95%
+  25  ASV31541.3                  55.87%    passed     99.45%
+  26  ASV16321.1                  55.87%    passed     95.15%
+  27  ASV17175.0                  54.92%    passed     97.34%
+  28  ASV21405.0                  52.70%    passed     68.29%
+  29  ASV1574.70                  53.65%    passed     71.63%
+  30  ASV13575.0                  53.65%    passed     71.12%
+  31  ASV2071.39                  53.33%    passed     71.97%
+  32  ASV10666.18                 53.33%    passed     67.82%
+  33  ASV2851.48                  53.33%    passed     74.04%
+  34  ASV4108.29                  53.97%    passed     58.16%
+  35  ASV969.46                   54.29%    passed     46.61%
+  36  ASV14487.10                 54.92%    passed     88.46%
+  37  ASV9755.7                   52.38%    passed     76.93%
+  38  ASV3052.38                  54.29%    passed     69.36%
+  39  ASV3821.29                  54.29%    passed     69.13%
+  40  ASV13296.4                  53.65%    passed     88.13%
+  41  ASV5093.26                  53.65%    passed     88.13%
+  42  ASV5932.16                  53.65%    passed     88.93%
+  43  ASV982.0                    53.97%    passed     82.09%
+  44  ASV5664.21                  53.97%    passed     79.95%
+  45  ASV5014.43                  53.97%    passed     74.40%
+  46  ASV28771.6                  52.70%    passed     70.58%
+  47  ASV631.9                    53.02%    passed     69.55%
+  48  ASV15492.5                  53.33%    passed     71.97%
+  49  ASV13830.40                 49.21%    passed     79.72%
+  50  ASV6000.12                  52.06%    passed     87.09%
+  51  ASV1817.625                 52.70%    passed     91.97%
+  52  ASV473.2857                 52.70%    passed     86.50%
+  53  ASV5403.19                  52.70%    passed     86.50%
+  54  ASV2474.22                  54.29%    passed     92.40%
+  55  ASV464.2878                 53.02%    passed     88.71%
+  56  ASV1692.653                 53.33%    passed     90.46%
+  57  ASV470.2923                 53.02%    passed     89.40%
+  58  ASV27879.0                  53.02%    passed     84.16%
+  59  ASV2523.83                  52.06%    passed     93.80%
+  60  ASV6636.3                   52.06%    passed     89.89%
+  61  ASV4152.49                  52.06%    passed     94.15%
+  62  ASV8891.21                  52.70%    passed     93.47%
+  63  ASV17176.11                 52.06%    passed     90.66%
+  64  ASV14165.3                  52.06%    passed     89.92%
+  65  ASV1300.642                 53.65%    passed     83.07%
+  66  ASV2130.440                 53.02%    passed     78.89%
+  67  ASV26754.3                  53.97%    passed     83.11%
+  68  ASV12091.5                  53.65%    passed     98.55%
+  69  ASV11134.16                 53.65%    passed     96.79%
+  70  ASV2734.312                 53.65%    passed     96.20%
+  71  ASV22051.13                 53.65%    passed     90.62%
+  72  ASV15069.32                 54.92%    passed     94.37%
+  73  ASV4691.107                 53.33%    passed     99.41%
+  74  ASV15071.22                 53.02%    passed     92.51%
+  75  ASV17572.18                 53.33%    passed     93.21%
+  76  ASV6254.11                  53.02%    passed     92.51%
+  77  ASV4217.176                 53.33%    passed     94.39%
+  78  ASV5926.19                  53.33%    passed     95.04%
+  79  ASV4136.186                 53.65%    passed     96.79%
+  80  ASV8508.9                   53.33%    passed     78.17%
+  81  ASV9616.13                  52.70%    passed     91.70%
+  82  ASV3844.13                  53.97%    passed     97.86%
+  83  ASV1662.37                  53.65%    passed     98.67%
+  84  ASV5999.20                  54.29%    passed     98.67%
+  85  ASV11154.4                  53.97%    passed     97.31%
+  86  ASV16717.36                 53.02%    passed     98.97%
+  87  ASV5751.9                   55.87%    passed     61.38%
+  88  ASV12296.126                56.19%    passed     67.15%
+  89  ASV5479.129                 54.60%    passed     63.86%
+  90  ASV1429.660                 53.97%    passed     69.60%
+  91  ASV7090.79                  54.29%    passed     41.99%
+  92  ASV15895.9                  55.56%    passed     75.71%
+  93  ASV2703.231                 54.92%    passed     68.33%
+  94  ASV9725.147                 54.60%    passed     67.93%
+  95  ASV6817.23                  56.83%    passed     78.58%
+  96  ASV14817.1                  53.02%    passed     92.87%
+  97  ASV8400.8                   53.33%    passed     96.96%
+  98  ASV4444.5                   53.33%    passed     97.41%
+  99  ASV14816.1                  54.29%    passed     87.60%
+ 100  ASV25699.0                  53.65%    passed     86.20%
+ 101  ASV7042.3                   53.65%    passed     91.27%
+ 102  ASV27753.5                  53.65%    passed     92.24%
+ 103  ASV5044.18                  52.70%    passed     94.13%
+ 104  ASV8399.9                   53.02%    passed     95.13%
+ 105  ASV5127.14                  53.02%    passed     98.46%
+ 106  ASV31533.2                  53.02%    passed     97.23%
+ 107  ASV6155.7                   54.29%    passed     97.82%
+ 108  ASV5572.18                  53.33%    passed     97.62%
+ 109  ASV19338.3                  53.02%    passed     89.57%
+ 110  ASV13038.7                  56.51%    passed     97.27%
+ 111  ASV13039.3                  56.19%    passed     27.26%
+ 112  ASV32888.9                  55.24%    passed     36.45%
+ 113  ASV17661.2                  60.32%    passed     26.60%
+ 114  ASV8890.5                   56.51%    passed     80.20%
+ 115  ASV27877.2                  56.51%    passed     90.80%
+ 116  ASV7105.0                   55.56%    passed     77.82%
+ 117  ASV2024.69                  55.56%    passed     73.58%
+ 118  ASV3078.63                  55.56%    passed     73.58%
+ 119  ASV472.21                   55.56%    passed     73.58%
+ 120  ASV5480.39                  55.24%    passed     58.76%
+ 121  ASV6639.38                  55.24%    passed     59.97%
+ 122  ASV8590.2                   56.19%    passed     90.03%
+ 123  ASV644.2086                 54.60%    passed     73.46%
+ 124  ASV466.2464                 54.92%    passed     77.21%
+ 125  ASV849.1289                 55.56%    passed     86.59%
+ 126  ASV1053.1095                55.56%    passed     94.29%
+ 127  ASV545.2434                 56.51%    passed     44.73%
+ 128  ASV1380.632                 56.51%    passed     53.57%
+ 129  ASV1939.474                 56.51%    passed     56.39%
+ 130  ASV5433.1197                56.83%    passed     55.19%
+ 131  ASV1710.651                 56.51%    passed     44.73%
+ 132  ASV3311.380                 56.51%    passed     44.73%
+ 133  ASV26750.0                  54.60%    passed     38.77%
+ 134  ASV4786.1                   55.56%    passed     48.60%
+ 135  ASV16326.0                  55.56%    passed     41.98%
+ 136  ASV33171.3                  55.56%    passed     47.14%
+ 137  ASV27880.4                  54.60%    passed     22.69%
+ 138  ASV15505.9                  63.49%    passed     42.42%
+ 139  ASV18745.1                  64.76%    passed     30.01%
+ 140  ASV17578.21                 59.05%    passed     71.56%
+ 141  1                          100.00%    passed      -nan%
+ 142  2_Glomeraceae               16.19%    passed     60.93%
+ 143  3_Glomeraceae               12.70%    passed     97.02%
+ 144  4_Glomeraceae                8.57%    passed     52.04%
+ 145  5_Glomeraceae                5.40%    passed     66.53%
+ 146  6_Glomeraceae               13.97%    passed     86.09%
+ 147  7_Glomeraceae               14.60%    passed     54.02%
+ 148  8_Glomeraceae               16.19%    passed     90.29%
+ 149  9_Glomeraceae               16.19%    passed     83.34%
+ 150  10_Glomeraceae              13.97%    passed     87.08%
+ 151  11_Glomeraceae               9.52%    passed     35.17%
+ 152  12_Glomeraceae              13.33%    passed     96.15%
+ 153  13_Glomeraceae              12.70%    passed     47.39%
+ 154  14_Glomeraceae              13.97%    passed     99.77%
+ 155  15_Glomeraceae              17.14%    passed     55.96%
+ 156  16_Glomeraceae              16.83%    passed     69.30%
+ 157  17_Glomeraceae               9.84%    passed     44.71%
+ 158  18_Glomeraceae              13.65%    passed     30.12%
+ 159  19_Glomeraceae               8.57%    passed     80.86%
+ 160  20_Glomeraceae              14.92%    passed     66.42%
+ 161  21_Glomeraceae              13.65%    passed     86.57%
+ 162  22_Glomeraceae               9.21%    passed     16.38%
+ 163  23_Glomeraceae              15.87%    passed     43.62%
+ 164  24_Diversisporaceae         19.68%    passed     75.54%
+ 165  25_Glomeraceae              13.02%    passed     85.02%
+ 166  26_Glomeraceae              13.65%    passed     48.64%
+ 167  27_Glomeraceae              17.14%    passed     89.43%
+ 168  28_Glomeraceae              14.29%    passed     58.99%
+ 169  29_Glomeraceae              11.75%    passed     54.29%
+ 170  30_Glomeraceae              14.29%    passed     76.39%
+ 171  31_Glomeraceae              17.14%    passed     83.27%
+ 172  32_Glomeraceae              11.75%    passed     88.99%
+ 173  33_Glomeraceae              15.87%    passed     29.11%
+ 174  34_Glomeraceae              61.59%    passed     65.53%
+ 175  35_Glomeraceae              13.02%    passed     66.85%
+ 176  36_Glomeraceae              15.87%    passed     82.67%
+ 177  37_Glomeraceae              12.70%    passed     66.86%
+ 178  38_Glomeraceae              12.70%    passed     88.08%
+ 179  39_Glomeraceae              15.87%    passed     97.74%
+ 180  40_Glomeraceae              11.11%    passed     54.83%
+ 181  41_Glomeraceae              12.06%    passed     94.53%
+ 182  42_Glomeraceae              63.49%    passed     69.97%
+ 183  43_Glomeraceae              17.46%    passed     74.33%
+ 184  44_Glomeraceae              16.83%    passed     80.12%
+ 185  45_Glomeraceae              11.75%    passed     93.33%
+ 186  46_Glomeraceae              19.37%    passed     78.28%
+ 187  Mortierella_globalpina       6.03%    passed     51.28%
+ 188  Septoglomus_mediterraneum    7.62%    passed     59.66%
+ 189  Funneliformis_pilosus        6.98%    passed     12.16%
+ 190  Gigaspora_polymorphira      15.56%    passed     86.26%
+ 191  Racocetra_crispa            15.87%    passed     97.88%
+ 192  Archaeospora_ecuadoriana    12.70%    passed     84.46%
+ 193  Dentiscutata_savannicola    17.46%    passed     71.71%
+ 194  Redeckera_megalocarpum      12.38%    passed     37.04%
+ 195  Glomus_macrocarpum          10.79%    passed     34.33%
+ 196  Acaulospora_entreriana      11.75%    passed     66.32%
+ 197  Acaulospora_spinosa         19.05%    passed     34.85%
+ 198  Acaulospora_colombiana       8.89%    passed     59.75%
+ 199  Diversispora_spurca         10.16%    passed     73.38%
+ 200  Acaulospora_laevis          13.02%    passed     56.39%
+ 201  Rhizophagus_proliferus       5.08%    passed     35.31%
+ 202  Funneliformis_mosseae        8.25%    passed     28.47%
+ 203  Cetraspora_nodosa           14.92%    passed     92.06%
+ 204  Acaulospora_cavernata       20.32%    passed     37.67%
+ 205  Diversispora_aurantia       10.16%    passed     49.31%
+ 206  Paraglomus_occultum         13.02%    passed     99.22%
+ 207  Racocetra_castanea          23.81%    passed     98.30%
+WARNING: 142 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                       42.57%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+WARNING: Sequence 1 contains only gaps or missing data
+ERROR: Some sequences (see above) are problematic, please check your alignment again
+IQ-TREE multicore version 2.2.2.6 COVID-edition for Linux 64-bit built May 27 2023
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    i03 (AVX2, FMA3, 503 GB RAM)
+Command: iqtree2 -nt AUTO -s Mojave2020.Glomero.muscle.fasaln.clipkit -alrt 1000 -bb 1000 -m MFP
+Seed:    739255 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Apr 11 12:40:34 2024
+Kernel:  AVX+FMA - auto-detect threads (8 CPU cores detected)
+
+Reading alignment file Mojave2020.Glomero.muscle.fasaln.clipkit ... ERROR: File not found Mojave2020.Glomero.muscle.fasaln.clipkit
